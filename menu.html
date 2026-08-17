@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Menu</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style-menu.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon" />
+
+	<script type="text/javascript" src="js/jquery-11.0.min.js"></script>	
+	<script type="text/javascript" src="js/unitegallery.min.js"></script>	
+
+	<link rel="stylesheet" href="css/unite-gallery.css" type="text/css" />
+	
+	<script type="text/javascript" src="js/ug-theme-compact.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+<nav>
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">ELITE</a>
+
+        <ul>
+            <li><a href="index.html">ACASA</a></li>
+            <li><a href="aboutme.html">DESPRE NOI</a></li>
+            <li><a href="gallery.html">GALERIE</a></li>
+            <li><a href="restaurant.html">RESTAURANT</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="camere.html">CAMERE</a></li>
+            <li><a href="contact1.html">CONTACT</a></li>
+        </ul>
+
+        <a href="contact1.html" class="nav-button">REZERVARE</a>
+
+    </div>
+</nav>
+	
+<section class="hero_restaurant">
+    <div class="hero-restaurant-content">
+        <h1>Menu</h1>
+
+<!--        <p>
+            Text sub restaurant
+        </p>-->
+
+<!--        <a href="aboutme.html" class="hero-button">Meniuri</a>-->
+
+    </div>
+   <div class="galerie_restaurant">
+       <div id="gallery">
+           <img alt="Imagine 1"
+                src="images/Menu/thumb1.jpg"
+                data-image="images/Menu/large-image1.avif"
+                data-description="descriere">
+
+           <img alt="Imagine 2"
+                src="images/Menu/thumb2.jpg"
+                data-image="images/Menu/large-image2.jpeg"
+                data-description=" descriere">
+
+           <img alt="Imagine 3"
+                src="images/Menu/thumb3.jpg"
+                data-image="images/Menu/large-image3.avif"
+                data-description=" descriere">
+
+           <!-- Temporary gallery entries for testing the thumbnail scroll -->
+           <img alt="Imagine test 4"
+                src="images/Menu/thumb1.jpg"
+                data-image="images/Menu/large-image1.avif"
+                data-description="Imagine temporara pentru test">
+
+           <img alt="Imagine test 5"
+                src="images/Menu/thumb2.jpg"
+                data-image="images/Menu/large-image2.jpeg"
+                data-description="Imagine temporara pentru test">
+
+           <img alt="Imagine test 6"
+                src="images/Menu/thumb3.jpg"
+                data-image="images/Menu/large-image3.avif"
+                data-description="Imagine temporara pentru test">
+
+           <img alt="Imagine test 7"
+                src="images/Menu/thumb1.jpg"
+                data-image="images/Menu/large-image1.avif"
+                data-description="Imagine temporara pentru test">
+
+           <img alt="Imagine test 8"
+                src="images/Menu/thumb2.jpg"
+                data-image="images/Menu/large-image2.jpeg"
+                data-description="Imagine temporara pentru test">
+
+           <img alt="Imagine test 9"
+                src="images/Menu/thumb3.jpg"
+                data-image="images/Menu/large-image3.avif"
+                data-description="Imagine temporara pentru test">
+
+           <img alt="Imagine test 10"
+                src="images/Menu/thumb1.jpg"
+                data-image="images/Menu/large-image1.avif"
+                data-description="Imagine temporara pentru test">
+
+           <img alt="Imagine test 11"
+                src="images/Menu/thumb2.jpg"
+                data-image="images/Menu/large-image2.jpeg"
+                data-description="Imagine temporara pentru test">
+
+           <img alt="Imagine test 12"
+                src="images/Menu/thumb3.jpg"
+                data-image="images/Menu/large-image3.avif"
+                data-description="Imagine temporara pentru test">
+       </div>
+   </div>
+</section>
+        
+        <!-- Footer -->
+<!--        <footer>
+            
+        
+		<div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text pull-left">Copyright © Grigorie Mirel Nicusor 2016</p>
+			
+            <a href="index.html" class="btn btn-flag btn pull-right">
+                <img id="english-flag" src="images/en.png" />
+            </a>
+            <a href="index.html" class="btn btn-flag btn pull-right">
+                <img id="romanian-flag" src="images/ro.png" />
+            </a>
+        </div>
+		</footer>-->
+    </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+		<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery").unitegallery({
+				theme_panel_position: "bottom",			//top, bottom, left, right - thumbs panel position
+				theme_hide_panel_under_width: 480,		//hide panel under certain browser width, if null, don't hide
+                strippanel_enable_buttons: true,
+                gallery_width: 1350,
+                gallery_height: 600,
+                gallery_min_width: 150
+			});
+
+		});
+		
+	</script>
+
+</body>
+
+</html>

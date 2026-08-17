@@ -1,0 +1,503 @@
+/*!
+ * Restaurant Page Custom CSS
+ * Styles specific to the Restaurant page
+ */
+
+
+/* =========================
+   BODY & GENERAL
+========================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 75px;
+
+    z-index: 100;
+
+    background: rgba(0, 0, 0, 0.15);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 42px;
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+    margin-right: 70px;
+
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo:hover,
+.logo:focus {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVIGATION MENU
+========================= */
+
+nav ul {
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    gap: 32px;
+
+    flex: 1;
+}
+
+nav ul li {
+    height: 100%;
+}
+
+nav ul li a {
+    position: relative;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+
+    transition: color 0.3s ease;
+}
+
+
+/* Navigation underline animation */
+
+nav ul li a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 18px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: white;
+
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #f0c52b;
+    text-decoration: none;
+}
+
+
+/* =========================
+   RESERVATION BUTTON
+========================= */
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+
+    padding: 0 24px;
+
+    background-color: white;
+
+    color: #174b7a;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border-radius: 3px;
+
+    white-space: nowrap;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+    background-color: #f0c52b;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero_restaurant {
+    position: relative;
+
+    height: 100vh;
+    width: 100%;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../images/Restaurant/restaurant_BackgroundImage.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-restaurant-content {
+    width: 80%;
+    max-width: 1000px;
+
+    text-align: center;
+
+    transform: translateY(-250px);
+
+    position: relative;
+    z-index: 5;
+}
+
+.hero_restaurant h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-size: 52px;
+    font-weight: 700;
+
+    color: white;
+
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero_restaurant p {
+    max-width: 800px;
+
+    margin: 0 auto 30px;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: white;
+
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+/* =========================
+   HERO BUTTON
+========================= */
+
+.hero-button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #c9a227;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+
+    transition: background 0.3s ease;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background: #a98516;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   RESTAURANT GALLERY
+========================= */
+
+/*
+ * IMPORTANT: UniteGallery needs full control of #gallery container.
+ * We style the parent container instead.
+ */
+
+
+
+/* Gallery container wrapper for in page position*/
+/* =========================
+   POZITIE GALERIE RESTAURANT
+========================= */
+.galerie_restaurant {
+    position: absolute;
+    top: 510px;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 94%;
+    max-width: none;
+}
+
+/* UniteGallery container - let it handle its own layout. Currently it;s 100% of the space alocated in galerie_restaurant */
+#gallery {
+    width: 100%;
+    height: auto;
+}
+
+/* Unite Gallery Compact Theme */
+.ug-theme-compact {
+    box-sizing: border-box;
+    border: 3px solid #c9a227;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* UniteGallery nested tiles theme */
+.ug-theme-tiles {
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(20, 20, 20, 0.95);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.ug-theme-tiles .ug-tile {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.ug-theme-compact .ug-item {
+    border-radius: 8px;
+}
+
+/* Thumbnail panel */
+.ug-theme-compact .ug-strip-panel {
+    background-color: rgba(20, 20, 20, 0.95);
+    border-top: 2px solid #c9a227;
+    z-index: 10;
+}
+
+/* Gallery buttons */
+.ug-theme-compact .ug-button {
+    color: white;
+    background-color: #c9a227;
+    transition: background-color 0.3s ease;
+}
+
+.ug-theme-compact .ug-button:hover {
+    background-color: #a98516;
+}
+
+/* Preloader */
+.ug-theme-compact .ug-slider-preloader {
+    border-color: #c9a227;
+    border-top-color: #c9a227;
+}
+
+/* =========================
+   UNITE GALLERY HOVER EFFECTS
+========================= */
+
+/* Loading indicator */
+
+.ug-theme-compact .ug-slider-preloader {
+    border-color: #c9a227;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    padding: 30px 0;
+}
+
+.navbar-fixed-bottom {
+    background-color: #222;
+
+    border-top: 3px solid #c9a227;
+}
+
+.navbar-text {
+    color: white;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btn-flag {
+    padding: 5px 10px;
+
+    border-radius: 3px;
+
+    transition: background-color 0.3s ease;
+}
+
+.btn-flag:hover {
+    background-color: rgba(201, 162, 39, 0.2);
+}
+
+.btn-flag img {
+    height: 24px;
+    width: auto;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+    .nav-container {
+        width: 95%;
+    }
+
+    .logo {
+        margin-right: 35px;
+
+        font-size: 36px;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .galerie_restaurant {
+        width: 95%;
+        top: 480px;
+        bottom: auto;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero-restaurant-content {
+        width: 90%;
+
+        transform: translateY(-180px);
+    }
+
+    .hero_restaurant h1 {
+        font-size: 40px;
+    }
+
+    .hero_restaurant p {
+        font-size: 16px;
+    }
+
+    .galerie_restaurant {
+        width: 94%;
+        top: 440px;
+        bottom: auto;
+    }
+
+    .navbar-text {
+        font-size: 11px;
+    }
+
+    .btn-flag img {
+        height: 20px;
+    }
+}
