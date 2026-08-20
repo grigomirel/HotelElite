@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Camere | Hotel Restaurant Elite</title>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css"
+          rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link href="css/style-hotel.css"
+          rel="stylesheet">
+    <link href="css/style-navigation.css"
+          rel="stylesheet">
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon"
+          href="images/favicon1.png"
+          type="image/x-icon">
+
+</head>
+
+
+<body>
+
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav>
+
+    <div class="nav-container">
+
+
+        <a href="index.html"
+           class="logo">
+
+            ELITE
+
+        </a>
+
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    ACASA
+                </a>
+            </li>
+
+            <li>
+                <a href="aboutme.html">
+                    EVENIMENTE
+                </a>
+            </li>
+
+            <li>
+                <a href="gallery.html">
+                    GALERIE
+                </a>
+            </li>
+
+            <li>
+                <a href="piscina.html">
+                    PISCINA
+                </a>
+            </li>
+
+            <li>
+                <a href="restaurant.html">
+                    RESTAURANT
+                </a>
+            </li>
+
+            <li>
+                <a href="menu.html">
+                    MENIU
+                </a>
+            </li>
+
+            <li>
+                <a href="hotel.html">
+                    HOTEL
+                </a>
+            </li>
+
+        </ul>
+
+
+        <a href="contact1.html"
+           class="nav-button">
+
+            CONTACT
+
+        </a>
+
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="rooms-hero">
+
+
+    <div class="hero-text">
+
+        <p class="hero-small-title">
+            HOTEL RESTAURANT ELITE
+        </p>
+
+        <h1>
+            Camere confortabile
+            <br>
+            pentru un sejur relaxant
+        </h1>
+
+        <p class="hero-subtitle">
+
+            Descoperă confortul și liniștea
+            Hotelului Restaurant Elite.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- BOOKING BAR -->
+
+    <div class="booking-bar">
+
+
+        <div class="booking-item date-picker" data-date-picker="checkin">
+
+            <label for="checkin">
+                Check-In
+            </label>
+
+            <input id="checkin" type="hidden">
+            <button class="booking-field date-field" type="button" aria-haspopup="dialog" aria-expanded="false">
+                <span id="checkin-display"></span>
+                <span class="field-icon" aria-hidden="true">▾</span>
+            </button>
+            <div class="calendar-popover" role="dialog" aria-label="Alege data de check-in"></div>
+
+        </div>
+
+
+        <div class="booking-item date-picker" data-date-picker="checkout">
+
+            <label for="checkout">
+                Check-Out
+            </label>
+
+            <input id="checkout" type="hidden">
+            <button class="booking-field date-field" type="button" aria-haspopup="dialog" aria-expanded="false">
+                <span id="checkout-display"></span>
+                <span class="field-icon" aria-hidden="true">▾</span>
+            </button>
+            <div class="calendar-popover" role="dialog" aria-label="Alege data de check-out"></div>
+
+        </div>
+
+
+        <div class="booking-item guest-picker" data-guest-picker="adults">
+
+            <label for="adults">
+                Adulți
+            </label>
+
+            <input id="adults" type="hidden" value="2">
+            <button class="booking-field guest-field" type="button" aria-haspopup="listbox" aria-expanded="false">
+                <span class="guest-value">2 adulți</span><span class="field-icon" aria-hidden="true">⌄</span>
+            </button>
+            <div class="guest-menu" role="listbox" aria-label="Număr de adulți">
+                <button type="button" role="option" data-value="1">1 adult</button>
+                <button type="button" role="option" data-value="2" aria-selected="true">2 adulți</button>
+                <button type="button" role="option" data-value="3">3 adulți</button>
+                <button type="button" role="option" data-value="4">4 adulți</button>
+            </div>
+
+        </div>
+
+
+        <div class="booking-item guest-picker" data-guest-picker="children">
+
+            <label for="children">
+                Copii
+            </label>
+
+            <input id="children" type="hidden" value="0">
+            <button class="booking-field guest-field" type="button" aria-haspopup="listbox" aria-expanded="false">
+                <span class="guest-value">Fără copii</span><span class="field-icon" aria-hidden="true">⌄</span>
+            </button>
+            <div class="guest-menu" role="listbox" aria-label="Număr de copii">
+                <button type="button" role="option" data-value="0" aria-selected="true">Fără copii</button>
+                <button type="button" role="option" data-value="1">1 copil</button>
+                <button type="button" role="option" data-value="2">2 copii</button>
+                <button type="button" role="option" data-value="3">3 copii</button>
+            </div>
+
+        </div>
+
+
+        <div class="booking-action">
+
+            <button type="button"
+               class="booking-button" id="booking-submit">
+
+                REZERVĂ ACUM
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="intro-section">
+
+
+    <div class="section-container intro-grid">
+
+
+        <div class="intro-title">
+
+            <h2>
+                Confort și eleganță
+                pentru fiecare oaspete
+            </h2>
+
+        </div>
+
+
+        <div class="intro-text">
+
+            <p>
+
+                Hotel Restaurant Elite oferă camere
+                confortabile, amenajate pentru un sejur
+                plăcut și relaxant.
+
+            </p>
+
+            <p>
+
+                Fie că ne vizitezi pentru o vacanță,
+                un eveniment sau o călătorie de afaceri,
+                camerele noastre sunt pregătite pentru
+                a-ți oferi confortul de care ai nevoie.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     HOTEL PHOTO CAROUSEL
+===================================================== -->
+
+<section class="hotel-gallery" aria-label="Galerie foto Hotel Elite">
+
+    <div class="gallery-track">
+
+        <div class="gallery-slide">
+            <img src="images/Camere/hotel-detail.jpg"
+                 alt="Detaliu Hotel Elite">
+        </div>
+
+        <div class="gallery-slide">
+            <img src="images/Camere/hotel-exterior.jpg"
+                 alt="Hotel Restaurant Elite">
+        </div>
+
+        <div class="gallery-slide active">
+            <img src="images/Camere/room-detail.jpg"
+                 alt="Detaliu cameră Hotel Elite">
+        </div>
+
+        <div class="gallery-slide">
+            <img src="images/Camere/room-double.jpg"
+                 alt="Cameră dublă Hotel Elite">
+        </div>
+
+        <div class="gallery-slide">
+            <img src="images/Camere/room-triple.jpg"
+                 alt="Cameră triplă Hotel Elite">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT ACCOMMODATION
+===================================================== -->
+
+<section class="about-rooms-section">
+
+
+    <div class="section-container">
+
+
+        <h2>
+            Cazare la Hotel Restaurant Elite
+        </h2>
+
+
+        <div class="two-column-text">
+
+
+            <p>
+
+                Camerele hotelului sunt concepute
+                pentru odihnă și confort, într-o atmosferă
+                elegantă și primitoare.
+
+                Fiecare cameră oferă spațiu generos,
+                mobilier atent ales și facilități utile
+                pentru un sejur cât mai plăcut.
+
+            </p>
+
+
+            <p>
+
+                Hotelul este potrivit atât pentru cupluri
+                și familii, cât și pentru persoanele
+                care călătoresc în interes de serviciu.
+
+                Pentru informații despre disponibilitate
+                și rezervări, ne poți contacta direct.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     HOTEL DESCRIPTION
+===================================================== -->
+
+<section class="hotel-description">
+
+
+    <div class="section-container">
+
+
+        <h2>
+            Hotelul tău în Drobeta Turnu Severin
+        </h2>
+
+
+        <div class="two-column-text">
+
+
+            <p>
+
+                Hotel Restaurant Elite îmbină confortul
+                camerelor cu serviciile unui restaurant
+                primitor și o atmosferă relaxantă.
+
+                Ne dorim ca fiecare oaspete să se simtă
+                binevenit pe întreaga durată a șederii.
+
+            </p>
+
+
+            <p>
+
+                Poziția hotelului oferă acces ușor
+                către principalele puncte de interes
+                din Drobeta Turnu Severin.
+
+                Indiferent de motivul vizitei,
+                te așteptăm cu servicii atente
+                și condiții confortabile.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PROMOTIONAL IMAGE SECTION
+===================================================== -->
+
+<section class="promo-section">
+
+
+    <div class="promo-overlay">
+
+
+        <h2>
+            Descoperă Hotel Restaurant Elite
+        </h2>
+
+
+        <p>
+
+            Explorează camerele, restaurantul
+            și atmosfera hotelului nostru.
+
+        </p>
+
+
+        <a href="gallery.html"
+           class="outline-button">
+
+            VEZI GALERIA
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ROOMS
+===================================================== -->
+
+<section class="rooms-section">
+
+
+    <div class="section-container rooms-container">
+
+
+        <div class="section-heading">
+
+            <p>
+                HOTEL ELITE
+            </p>
+
+            <h2>
+                Camere
+            </h2>
+
+        </div>
+
+
+
+        <div class="room-grid">
+            <article class="room-card">
+                <div class="room-image">
+                    <img src="images/Camere/room-double.jpg"
+                         alt="Cameră dublă standard">
+                </div>
+                <div class="room-card-content">
+                    <h3>Cameră Dublă Standard</h3>
+                    <p>Pat dublu și confort pentru maximum 2 oaspeți.</p>
+                    <button type="button" class="room-button" data-room="0">VEZI DETALII</button>
+                </div>
+            </article>
+
+            <article class="room-card">
+                <div class="room-image">
+                    <img src="images/Camere/room-detail.jpg"
+                         alt="Cameră dublă deluxe">
+                </div>
+                <div class="room-card-content">
+                    <h3>Cameră Dublă Deluxe</h3>
+                    <p>Pat dublu extra-large și dotări superioare pentru 2 oaspeți.</p>
+                    <button type="button" class="room-button" data-room="1">VEZI DETALII</button>
+                </div>
+            </article>
+
+            <article class="room-card">
+                <div class="room-image">
+                    <img src="images/Camere/room-feature-1.jpg"
+                         alt="Cameră King cu balcon">
+                </div>
+                <div class="room-card-content">
+                    <h3>Cameră King cu Balcon</h3>
+                    <p>Pat king-size, balcon și opțiune de vedere spre piscină.</p>
+                    <button type="button" class="room-button" data-room="2">VEZI DETALII</button>
+                </div>
+            </article>
+
+            <article class="room-card">
+                <div class="room-image">
+                    <img src="images/Camere/room-triple.jpg"
+                         alt="Suită cu un dormitor">
+                </div>
+                <div class="room-card-content">
+                    <h3>Suită cu un Dormitor</h3>
+                    <p>Două paturi duble și spațiu suplimentar pentru un sejur relaxant.</p>
+                    <button type="button" class="room-button" data-room="3">VEZI DETALII</button>
+                </div>
+            </article>
+
+            <article class="room-card">
+                <div class="room-image">
+                    <img src="images/Camere/apartment.jpg"
+                         alt="Apartament cu balcon și vedere la piscină">
+                </div>
+                <div class="room-card-content">
+                    <h3>Apartament cu Balcon</h3>
+                    <p>Două paturi duble, balcon, vedere la piscină și maximum 4 oaspeți.</p>
+                    <button type="button" class="room-button" data-room="4">VEZI DETALII</button>
+                </div>
+            </article>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<!-- ROOM DETAILS MODAL -->
+<div class="room-modal" id="room-modal" aria-hidden="true">
+    <div class="room-modal-backdrop" data-close-modal></div>
+    <section class="room-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="room-modal-title">
+        <button class="room-modal-close" type="button" aria-label="Închide detaliile camerei" data-close-modal>&times;</button>
+        <div class="room-modal-gallery">
+            <div class="room-modal-main-image">
+                <img id="room-modal-image" src="" alt="">
+                <button class="room-gallery-arrow room-gallery-prev" type="button" aria-label="Imaginea precedentă">&#8249;</button>
+                <button class="room-gallery-arrow room-gallery-next" type="button" aria-label="Imaginea următoare">&#8250;</button>
+                <div class="room-gallery-dots" id="room-gallery-dots"></div>
+            </div>
+            <div class="room-gallery-thumbs" id="room-gallery-thumbs"></div>
+        </div>
+        <div class="room-modal-details">
+            <p class="room-modal-kicker">HOTEL RESTAURANT ELITE</p>
+            <h2 id="room-modal-title"></h2>
+            <div class="room-modal-tags" id="room-modal-tags"></div>
+            <p class="room-modal-description" id="room-modal-description"></p>
+            <div class="room-facts">
+                <p><strong>Dimensiune cameră</strong><span id="room-modal-size"></span></p>
+                <p><strong>Capacitate</strong><span id="room-modal-capacity"></span></p>
+                <p><strong>Tip pat</strong><span id="room-modal-bed"></span></p>
+            </div>
+            <div class="room-amenities">
+                <div>
+                    <h3>Baie privată</h3>
+                    <ul id="room-modal-bathroom"></ul>
+                </div>
+                <div>
+                    <h3>Facilități</h3>
+                    <ul id="room-modal-facilities"></ul>
+                </div>
+            </div>
+            <a href="contact1.html" class="room-modal-book">REZERVĂ CAMERA</a>
+        </div>
+    </section>
+</div>
+
+
+
+<!-- =====================================================
+     HOTEL PHILOSOPHY
+===================================================== -->
+
+<section class="philosophy-section">
+
+
+    <div class="section-container">
+
+
+        <p>
+
+            La Hotel Restaurant Elite credem că
+            fiecare oaspete merită o experiență
+            confortabilă și plăcută.
+
+            Punem accent pe curățenie, liniște,
+            servicii atente și o atmosferă
+            în care să te poți relaxa.
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOUR CIRCULAR LINKS
+===================================================== -->
+
+<section class="quick-links-section">
+
+
+    <div class="section-container quick-links-grid">
+
+
+
+        <a href="index.html"
+           class="quick-link">
+
+
+            <div class="circle-image">
+
+                <img
+                    src="images/Camere/hotel-exterior.jpg"
+                    alt="Acasă">
+
+            </div>
+
+
+            <h3>
+                Acasă
+            </h3>
+
+
+            <p>
+
+                Revino pe pagina principală
+                a Hotelului Elite.
+
+            </p>
+
+
+        </a>
+
+
+
+        <a href="gallery.html"
+           class="quick-link">
+
+
+            <div class="circle-image">
+
+                <img
+                    src="images/gallery.avif"
+                    alt="Piscină">
+
+            </div>
+
+
+            <h3>
+                Piscină
+            </h3>
+
+
+            <p>
+
+                Descoperă piscina în
+                galeria Hotelului Elite.
+
+            </p>
+
+
+        </a>
+
+
+
+        <a href="restaurant.html"
+           class="quick-link">
+
+
+            <div class="circle-image">
+
+                <img
+                    src="images/Restaurant/restaurant_BackgroundImage.jpg"
+                    alt="Restaurant">
+
+            </div>
+
+
+            <h3>
+                Restaurant
+            </h3>
+
+
+            <p>
+
+                Descoperă restaurantul și
+                atmosfera Hotelului Elite.
+
+            </p>
+
+
+        </a>
+
+
+
+        <a href="menu.html"
+           class="quick-link">
+
+
+            <div class="circle-image">
+
+                <img
+                    src="images/Menu/large-image1.avif"
+                    alt="Meniu">
+
+            </div>
+
+
+            <h3>
+                Meniu
+            </h3>
+
+
+            <p>
+
+                Explorează preparatele
+                restaurantului nostru.
+
+            </p>
+
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+
+    <div class="section-container footer-grid">
+
+
+
+        <!-- HOTEL -->
+
+        <div class="footer-column footer-brand">
+
+
+            <div class="footer-logo">
+                ELITE
+            </div>
+
+
+            <p>
+
+                Hotel Restaurant Elite oferă
+                confort, ospitalitate și servicii
+                într-o atmosferă primitoare.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                Contact
+            </h4>
+
+
+            <p>
+                Drobeta Turnu Severin
+            </p>
+
+
+            <p>
+                Telefon: 000 000 000
+            </p>
+
+
+            <p>
+                Email: contact@hotelelite.ro
+            </p>
+
+
+        </div>
+
+
+
+        <!-- LINKS -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                Descoperă
+            </h4>
+
+
+            <ul>
+
+                <li><a href="aboutme.html">Evenimente</a></li>
+                <li><a href="piscina.html">Piscină</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="menu.html">Meniu</a></li>
+
+            </ul>
+
+
+        </div>
+
+
+
+        <!-- BOOK -->
+
+        <div class="footer-column">
+
+
+            <h4>
+                Rezervări
+            </h4>
+
+
+            <p>
+
+                Pentru informații despre
+                camere și disponibilitate,
+                contactează-ne direct.
+
+            </p>
+
+
+            <a href="contact1.html"
+               class="footer-button">
+
+                CONTACT
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © Hotel Restaurant Elite.
+            Toate drepturile rezervate.
+
+        </p>
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="js/jquery.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    (function () {
+        const gallery = document.querySelector('.hotel-gallery');
+        const track = gallery.querySelector('.gallery-track');
+        const originalSlides = Array.from(gallery.querySelectorAll('.gallery-slide'));
+        const originalActiveIndex = originalSlides.findIndex(slide => slide.classList.contains('active'));
+        const leadingClones = originalSlides.slice(-2).map(slide => slide.cloneNode(true));
+        const trailingClones = originalSlides.slice(0, 2).map(slide => slide.cloneNode(true));
+        const leadingFragment = document.createDocumentFragment();
+        const trailingFragment = document.createDocumentFragment();
+
+        leadingClones.forEach(slide => leadingFragment.appendChild(slide));
+        trailingClones.forEach(slide => trailingFragment.appendChild(slide));
+        track.prepend(leadingFragment);
+        track.append(trailingFragment);
+
+        const slides = Array.from(track.querySelectorAll('.gallery-slide'));
+        let activeIndex = originalActiveIndex + leadingClones.length;
+        let scrollAnimation;
+        let resetTimer;
+
+        slides.forEach((slide, slideIndex) => {
+            slide.setAttribute('tabindex', '0');
+            slide.setAttribute('role', 'button');
+
+            slide.addEventListener('click', () => showSlide(slideIndex));
+            slide.addEventListener('keydown', event => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    showSlide(slideIndex);
+                }
+            });
+        });
+
+        function showSlide(index, smooth = true) {
+            activeIndex = (index + slides.length) % slides.length;
+
+            clearTimeout(resetTimer);
+
+            slides.forEach((slide, slideIndex) => {
+                slide.classList.toggle('active', slideIndex === activeIndex);
+                slide.setAttribute('aria-current', slideIndex === activeIndex ? 'true' : 'false');
+            });
+
+            const activeSlide = slides[activeIndex];
+            const targetLeft = activeSlide.offsetLeft
+                - (track.clientWidth - activeSlide.clientWidth) / 2;
+
+            if (!smooth) {
+                track.scrollLeft = targetLeft;
+                return;
+            }
+
+            cancelAnimationFrame(scrollAnimation);
+
+            const startLeft = track.scrollLeft;
+            const distance = targetLeft - startLeft;
+            const duration = 650;
+            const startTime = performance.now();
+
+            function animateScroll(currentTime) {
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+                const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+                track.scrollLeft = startLeft + distance * easedProgress;
+
+                if (progress < 1) {
+                    scrollAnimation = requestAnimationFrame(animateScroll);
+                }
+            }
+
+            scrollAnimation = requestAnimationFrame(animateScroll);
+
+            resetTimer = setTimeout(() => {
+                let resetIndex = activeIndex;
+
+                if (activeIndex < leadingClones.length) {
+                    resetIndex = activeIndex + originalSlides.length;
+                } else if (activeIndex >= leadingClones.length + originalSlides.length) {
+                    resetIndex = activeIndex - originalSlides.length;
+                }
+
+                if (resetIndex !== activeIndex) {
+                    showSlide(resetIndex, false);
+                }
+            }, duration + 30);
+        }
+
+        window.addEventListener('resize', () => showSlide(activeIndex, false));
+        window.addEventListener('load', () => showSlide(activeIndex, false));
+    }());
+
+    (function () {
+        const imagePath = 'images/Camere/';
+        const rooms = [
+            {
+                title: 'Cameră Dublă Standard', size: '20 m²', capacity: '2 oaspeți', bed: '1 pat dublu',
+                description: 'O cameră luminoasă și primitoare, potrivită pentru un sejur confortabil în doi.',
+                tags: ['Aer condiționat', 'Baie privată', 'TV', 'Wi-Fi gratuit'],
+                bathroom: ['Duș', 'Prosoape', 'Uscător de păr', 'Articole de toaletă'],
+                facilities: ['Aer condiționat', 'Televizor cu ecran plat', 'Minibar', 'Dulap', 'Birou', 'Încălzire'],
+                images: ['room-double.jpg', 'room-detail.jpg', 'hotel-detail.jpg', 'room-feature-1.jpg']
+            },
+            {
+                title: 'Cameră Dublă Deluxe', size: '25 m²', capacity: '2 oaspeți', bed: '1 pat extra-large',
+                description: 'Spațiu generos, finisaje elegante și dotări superioare pentru un plus de confort.',
+                tags: ['Pat extra-large', 'Aer condiționat', 'Baie privată', 'Wi-Fi gratuit'],
+                bathroom: ['Duș tip walk-in', 'Halate de baie', 'Uscător de păr', 'Articole de toaletă'],
+                facilities: ['Aer condiționat', 'Televizor cu ecran plat', 'Minibar', 'Seif', 'Zonă de relaxare', 'Încălzire'],
+                images: ['room-detail.jpg', 'room-double.jpg', 'room-feature-1.jpg', 'hotel-detail.jpg']
+            },
+            {
+                title: 'Cameră King cu Balcon', size: '28 m²', capacity: '2 oaspeți', bed: '1 pat king-size',
+                description: 'Cameră rafinată cu balcon privat și vedere relaxantă spre zona piscinei.',
+                tags: ['Balcon', 'Vedere la piscină', 'Pat king-size', 'Wi-Fi gratuit'],
+                bathroom: ['Duș', 'Prosoape', 'Uscător de păr', 'Articole de toaletă'],
+                facilities: ['Balcon mobilat', 'Aer condiționat', 'Televizor', 'Minibar', 'Seif', 'Zonă de relaxare'],
+                images: ['room-feature-1.jpg', 'room-detail.jpg', 'apartment.jpg', 'hotel-exterior.jpg']
+            },
+            {
+                title: 'Suită cu un Dormitor', size: '40 m²', capacity: '4 oaspeți', bed: '2 paturi duble',
+                description: 'O suită spațioasă, ideală pentru familie, cu dormitor și zonă de relaxare generoasă.',
+                tags: ['Suită', 'Cameră de familie', 'Baie privată', 'Wi-Fi gratuit'],
+                bathroom: ['Cadă sau duș', 'Prosoape', 'Uscător de păr', 'Articole de toaletă'],
+                facilities: ['Aer condiționat', 'Zonă de relaxare', 'Televizor', 'Minibar', 'Dulap', 'Masă'],
+                images: ['room-triple.jpg', 'apartment.jpg', 'room-double.jpg', 'room-detail.jpg']
+            },
+            {
+                title: 'Apartament cu Balcon', size: '50 m²', capacity: '4 oaspeți', bed: '2 paturi duble',
+                description: 'Apartament amplu cu balcon și vedere spre piscină, creat pentru sejururi relaxante în familie.',
+                tags: ['Apartament', 'Balcon', 'Vedere la piscină', 'Wi-Fi gratuit'],
+                bathroom: ['Cadă sau duș', 'Halate de baie', 'Uscător de păr', 'Articole de toaletă'],
+                facilities: ['Balcon mobilat', 'Aer condiționat', 'Zonă de zi', 'Televizor', 'Minibar', 'Seif'],
+                images: ['apartment.jpg', 'room-triple.jpg', 'room-feature-1.jpg', 'hotel-exterior.jpg']
+            }
+        ];
+
+        const modal = document.getElementById('room-modal');
+        const modalImage = document.getElementById('room-modal-image');
+        const thumbs = document.getElementById('room-gallery-thumbs');
+        const dots = document.getElementById('room-gallery-dots');
+        let currentRoom;
+        let currentImage = 0;
+        let lastFocused;
+
+        function fillList(id, items) {
+            document.getElementById(id).innerHTML = items.map(item => '<li>' + item + '</li>').join('');
+        }
+
+        function showImage(index) {
+            currentImage = (index + currentRoom.images.length) % currentRoom.images.length;
+            modalImage.src = imagePath + currentRoom.images[currentImage];
+            modalImage.alt = currentRoom.title + ' – imaginea ' + (currentImage + 1);
+            Array.from(thumbs.children).forEach((thumb, i) => thumb.classList.toggle('active', i === currentImage));
+            Array.from(dots.children).forEach((dot, i) => dot.classList.toggle('active', i === currentImage));
+        }
+
+        function openModal(roomIndex) {
+            currentRoom = rooms[roomIndex];
+            currentImage = 0;
+            lastFocused = document.activeElement;
+            document.getElementById('room-modal-title').textContent = currentRoom.title;
+            document.getElementById('room-modal-description').textContent = currentRoom.description;
+            document.getElementById('room-modal-size').textContent = currentRoom.size;
+            document.getElementById('room-modal-capacity').textContent = currentRoom.capacity;
+            document.getElementById('room-modal-bed').textContent = currentRoom.bed;
+            document.getElementById('room-modal-tags').innerHTML = currentRoom.tags.map(tag => '<span>' + tag + '</span>').join('');
+            fillList('room-modal-bathroom', currentRoom.bathroom);
+            fillList('room-modal-facilities', currentRoom.facilities);
+            thumbs.innerHTML = currentRoom.images.map((image, i) => '<button type="button" aria-label="Vezi imaginea ' + (i + 1) + '"><img src="' + imagePath + image + '" alt=""></button>').join('');
+            dots.innerHTML = currentRoom.images.map((image, i) => '<button type="button" aria-label="Vezi imaginea ' + (i + 1) + '"></button>').join('');
+            Array.from(thumbs.children).forEach((thumb, i) => thumb.addEventListener('click', () => showImage(i)));
+            Array.from(dots.children).forEach((dot, i) => dot.addEventListener('click', () => showImage(i)));
+            showImage(0);
+            modal.classList.add('open');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('modal-open');
+            modal.querySelector('.room-modal-close').focus();
+        }
+
+        function closeModal() {
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('modal-open');
+            if (lastFocused) lastFocused.focus();
+        }
+
+        document.querySelectorAll('[data-room]').forEach(button => button.addEventListener('click', () => openModal(Number(button.dataset.room))));
+        modal.querySelectorAll('[data-close-modal]').forEach(item => item.addEventListener('click', closeModal));
+        modal.querySelector('.room-gallery-prev').addEventListener('click', () => showImage(currentImage - 1));
+        modal.querySelector('.room-gallery-next').addEventListener('click', () => showImage(currentImage + 1));
+        document.addEventListener('keydown', event => {
+            if (!modal.classList.contains('open')) return;
+            if (event.key === 'Escape') closeModal();
+            if (event.key === 'ArrowLeft') showImage(currentImage - 1);
+            if (event.key === 'ArrowRight') showImage(currentImage + 1);
+        });
+    }());
+</script>
+
+<script>
+    (function () {
+        const today = startOfDay(new Date());
+        const tomorrow = addDays(today, 1);
+        const checkinInput = document.getElementById('checkin');
+        const checkoutInput = document.getElementById('checkout');
+        const datePickers = Array.from(document.querySelectorAll('[data-date-picker]'));
+        const guestPickers = Array.from(document.querySelectorAll('[data-guest-picker]'));
+
+        checkinInput.value = toISO(today);
+        checkoutInput.value = toISO(tomorrow);
+        updateDateDisplays();
+
+        function startOfDay(date) {
+            return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+        }
+
+        function addDays(date, number) {
+            const next = new Date(date);
+            next.setDate(next.getDate() + number);
+            return startOfDay(next);
+        }
+
+        function toISO(date) {
+            return date.getFullYear() + '-' + String(date.getMonth() + 1).padStart(2, '0') + '-' + String(date.getDate()).padStart(2, '0');
+        }
+
+        function fromISO(value) {
+            const parts = value.split('-').map(Number);
+            return new Date(parts[0], parts[1] - 1, parts[2]);
+        }
+
+        function formatDate(date) {
+            return new Intl.DateTimeFormat('ro-RO', { day: '2-digit', month: 'short', year: 'numeric' }).format(date).replace('.', '');
+        }
+
+        function updateDateDisplays() {
+            document.getElementById('checkin-display').textContent = formatDate(fromISO(checkinInput.value));
+            document.getElementById('checkout-display').textContent = formatDate(fromISO(checkoutInput.value));
+        }
+
+        function closeAll(except) {
+            document.querySelectorAll('.date-picker.open, .guest-picker.open').forEach(picker => {
+                if (picker !== except) {
+                    picker.classList.remove('open');
+                    const button = picker.querySelector('.booking-field');
+                    if (button) button.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        function renderCalendar(picker) {
+            const type = picker.dataset.datePicker;
+            const input = type === 'checkin' ? checkinInput : checkoutInput;
+            const selected = fromISO(input.value);
+            const shown = picker._shownMonth || new Date(selected.getFullYear(), selected.getMonth(), 1);
+            picker._shownMonth = shown;
+            const minimum = type === 'checkin' ? today : addDays(fromISO(checkinInput.value), 1);
+            const monthTitle = new Intl.DateTimeFormat('ro-RO', { month: 'long', year: 'numeric' }).format(shown);
+            const firstWeekday = (shown.getDay() + 6) % 7;
+            const numberOfDays = new Date(shown.getFullYear(), shown.getMonth() + 1, 0).getDate();
+            const days = [];
+
+            for (let blank = 0; blank < firstWeekday; blank += 1) days.push('<span aria-hidden="true"></span>');
+
+            for (let day = 1; day <= numberOfDays; day += 1) {
+                const date = new Date(shown.getFullYear(), shown.getMonth(), day);
+                const disabled = date < minimum;
+                const classes = [toISO(date) === toISO(selected) ? 'selected' : '', toISO(date) === toISO(today) ? 'today' : ''].filter(Boolean).join(' ');
+                days.push('<button type="button" data-date="' + toISO(date) + '" class="' + classes + '"' + (disabled ? ' disabled' : '') + '>' + day + '</button>');
+            }
+
+            picker.querySelector('.calendar-popover').innerHTML =
+                '<div class="calendar-header"><button type="button" class="calendar-nav prev-month" aria-label="Luna precedentă">‹</button><strong>' + monthTitle + '</strong><button type="button" class="calendar-nav next-month" aria-label="Luna următoare">›</button></div>' +
+                '<div class="calendar-weekdays"><span>Lu</span><span>Ma</span><span>Mi</span><span>Jo</span><span>Vi</span><span>Sâ</span><span>Du</span></div>' +
+                '<div class="calendar-days">' + days.join('') + '</div>';
+
+            picker.querySelector('.prev-month').addEventListener('click', () => changeMonth(picker, -1));
+            picker.querySelector('.next-month').addEventListener('click', () => changeMonth(picker, 1));
+            picker.querySelectorAll('[data-date]').forEach(button => button.addEventListener('click', () => selectDate(picker, button.dataset.date)));
+        }
+
+        function changeMonth(picker, amount) {
+            picker._shownMonth = new Date(picker._shownMonth.getFullYear(), picker._shownMonth.getMonth() + amount, 1);
+            renderCalendar(picker);
+        }
+
+        function selectDate(picker, value) {
+            if (picker.dataset.datePicker === 'checkin') {
+                checkinInput.value = value;
+                const minimumCheckout = addDays(fromISO(value), 1);
+                if (fromISO(checkoutInput.value) < minimumCheckout) checkoutInput.value = toISO(minimumCheckout);
+            } else {
+                checkoutInput.value = value;
+            }
+            updateDateDisplays();
+            picker.classList.remove('open');
+            picker.querySelector('.booking-field').setAttribute('aria-expanded', 'false');
+        }
+
+        datePickers.forEach(picker => {
+            const field = picker.querySelector('.date-field');
+            picker.querySelector('.calendar-popover').addEventListener('click', event => event.stopPropagation());
+            field.addEventListener('click', () => {
+                const opening = !picker.classList.contains('open');
+                closeAll(picker);
+                picker.classList.toggle('open', opening);
+                field.setAttribute('aria-expanded', String(opening));
+                if (opening) {
+                    const input = picker.dataset.datePicker === 'checkin' ? checkinInput : checkoutInput;
+                    const selected = fromISO(input.value);
+                    picker._shownMonth = new Date(selected.getFullYear(), selected.getMonth(), 1);
+                    renderCalendar(picker);
+                }
+            });
+        });
+
+        guestPickers.forEach(picker => {
+            const field = picker.querySelector('.guest-field');
+            const hiddenInput = document.getElementById(picker.dataset.guestPicker);
+            field.addEventListener('click', () => {
+                const opening = !picker.classList.contains('open');
+                closeAll(picker);
+                picker.classList.toggle('open', opening);
+                field.setAttribute('aria-expanded', String(opening));
+            });
+            picker.querySelectorAll('.guest-menu button').forEach(option => option.addEventListener('click', () => {
+                hiddenInput.value = option.dataset.value;
+                field.querySelector('.guest-value').textContent = option.textContent;
+                picker.querySelectorAll('.guest-menu button').forEach(item => item.setAttribute('aria-selected', String(item === option)));
+                picker.classList.remove('open');
+                field.setAttribute('aria-expanded', 'false');
+            }));
+        });
+
+        document.addEventListener('click', event => {
+            if (!event.target.closest('.date-picker, .guest-picker')) closeAll();
+        });
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape') closeAll();
+        });
+
+        document.getElementById('booking-submit').addEventListener('click', () => {
+            const adults = document.getElementById('adults').value;
+            const children = document.getElementById('children').value;
+            const bookingUrl = new URL('https://www.booking.com/hotel/ro/motel-restaurant-elite.en-gb.html?aid=311984&label=motel-restaurant-elite-GE5Eu1Rr1_dVGV6RcUme9QS541140381008%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-510011991762%3Alp9051361%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YXwxhKG0pUU-mcMVT-JwQpc&sid=4c8ea0a2c36a6c5d559a209e6aee0aeb&dest_id=-1158652&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1787067461&srpvid=68236dd991640789&type=total&ucfs=1&chal_t=1787228017164&force_referer=');
+            bookingUrl.searchParams.set('checkin', checkinInput.value);
+            bookingUrl.searchParams.set('checkout', checkoutInput.value);
+            bookingUrl.searchParams.set('group_adults', adults);
+            bookingUrl.searchParams.set('req_adults', adults);
+            bookingUrl.searchParams.set('group_children', children);
+            bookingUrl.searchParams.set('req_children', children);
+            bookingUrl.searchParams.set('room1', Array(Number(adults)).fill('A').concat(Array(Number(children)).fill('0')).join(','));
+            const bookingWindow = window.open(bookingUrl.toString(), '_blank');
+            if (bookingWindow) {
+                bookingWindow.opener = null;
+                bookingWindow.focus();
+            }
+        });
+    }());
+</script>
+
+
+</body>
+
+</html>
