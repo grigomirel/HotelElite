@@ -1,0 +1,73 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { color: #292d2a; background: #fff; font-family: Arial, Helvetica, sans-serif; }
+.section-container { width: min(1180px, 90%); margin: 0 auto; }
+.section-kicker { margin-bottom: 14px; color: #9c7652; font-size: 12px; font-weight: 800; letter-spacing: 3px; }
+.section-kicker.centered { text-align: center; }
+
+.spa-hero { position: relative; min-height: 628px; display: flex; align-items: center; background: url('../images/Spa/spa-hero.jpg') center 58%/cover no-repeat; }
+.spa-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(29,42,38,.86), rgba(29,42,38,.3)); }
+.spa-hero-content { position: absolute; top: 34%; left: 11%; z-index: 1; width: min(1180px, 86%); color: #fff; }
+.spa-hero-content > p { margin-bottom: 14px; color: #dbc19d; font-size: 12px; font-weight: bold; letter-spacing: 3px; }
+.spa-hero h1 { max-width: 760px; margin-bottom: 20px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(50px, 7vw, 84px); font-weight: normal; line-height: 1.05; }
+.spa-hero-content span { max-width: 610px; display: block; font-size: 18px; line-height: 1.7; }
+
+.spa-showcase { padding: 125px 0 135px; background: #fff; }
+.showcase-grid { width: min(1240px, 90%); display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 78px; }
+.showcase-grid > img { width: 100%; height: 470px; display: block; object-fit: cover; box-shadow: 22px 22px 0 #e5ddd2; }
+.showcase-copy h2, .rituals-section h2, .spa-gallery-copy h2 { font-family: Georgia, "Times New Roman", serif; font-weight: normal; line-height: 1.12; }
+.showcase-copy h2 { margin: 0 0 25px; color: #26352f; font-size: 48px; }
+.showcase-copy > p:not(.section-kicker) { margin: 0 0 18px; color: #343b37; font-size: 17px; line-height: 1.62; }
+.spa-book-button { margin-top: 10px; padding: 15px 25px; display: inline-block; color: #fff; background: #1571b0; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-decoration: none; transition: background .25s ease, transform .25s ease; }
+.spa-book-button:hover { color: #fff; background: #105b90; transform: translateY(-2px); }
+
+.rituals-section { padding: 95px 0 110px; background: #f3eee7; }
+.rituals-section h2 { margin: 0 0 48px; color: #26352f; font-size: 46px; text-align: center; }
+.rituals-grid { width: min(1060px, 100%); margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; }
+.ritual-card { overflow: hidden; background: #fff; box-shadow: 0 8px 22px rgba(54,48,40,.14); }
+.ritual-card > img { width: 100%; height: 245px; display: block; object-fit: cover; transition: transform .4s ease; }
+.ritual-card:hover > img { transform: scale(1.04); }
+.ritual-card-content { padding: 27px 25px 31px; text-align: center; }
+.ritual-card h3 { margin: 0 0 13px; color: #8f6848; font-family: Georgia, "Times New Roman", serif; font-size: 25px; font-weight: normal; }
+.ritual-card p { color: #424743; font-size: 15px; line-height: 1.55; }
+
+.spa-gallery { padding: 110px 6% 125px; background: #fff; }
+.spa-gallery-copy { width: min(670px, 100%); margin: 0 auto 48px; text-align: center; }
+.spa-gallery-copy h2 { margin-bottom: 18px; color: #26352f; font-size: 46px; }
+.spa-gallery-copy p:last-child { color: #505651; font-size: 17px; line-height: 1.65; }
+.spa-gallery-grid { width: min(1160px, 100%); margin: 0 auto; display: grid; grid-template-columns: 1.15fr .85fr .85fr 1.15fr; gap: 16px; }
+.spa-gallery-grid img { width: 100%; height: 310px; display: block; object-fit: cover; }
+.spa-gallery-grid img:nth-child(2), .spa-gallery-grid img:nth-child(3) { margin-top: 30px; }
+
+footer { color: rgba(255,255,255,.8); background: #9b7a5e; }
+.footer-content { padding: 60px 0 45px; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 60px; }
+.footer-content strong { color: #fff; font-size: 39px; }
+.footer-content h3 { margin-bottom: 15px; color: #fff; font-size: 16px; }
+.footer-content p { margin-top: 10px; line-height: 1.6; }
+.footer-content a { margin-bottom: 8px; display: block; color: rgba(255,255,255,.75); text-decoration: none; }
+.copyright { padding: 18px; text-align: center; border-top: 1px solid rgba(255,255,255,.12); font-size: 12px; }
+
+@media (max-width: 900px) {
+    .showcase-grid { gap: 45px; }
+    .rituals-grid { gap: 22px; }
+    .spa-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .spa-gallery-grid img:nth-child(2), .spa-gallery-grid img:nth-child(3) { margin-top: 0; }
+}
+
+@media (max-width: 768px) {
+    .spa-hero { min-height: 538px; }
+    .spa-hero-content { top: 30%; left: 7%; width: 86%; }
+    .showcase-grid, .footer-content { grid-template-columns: 1fr; }
+    .spa-showcase { padding: 75px 0; }
+    .showcase-grid > img { height: 410px; box-shadow: 14px 14px 0 #e5ddd2; }
+    .rituals-grid { width: min(440px, 100%); grid-template-columns: 1fr; }
+    .rituals-section { padding: 70px 0 80px; }
+    .spa-gallery { padding-top: 75px; padding-bottom: 85px; }
+}
+
+@media (max-width: 520px) {
+    .showcase-copy h2, .rituals-section h2, .spa-gallery-copy h2 { font-size: 38px; }
+    .showcase-grid > img { height: 330px; }
+    .spa-gallery-grid { grid-template-columns: 1fr; }
+    .spa-gallery-grid img { height: 280px; }
+}

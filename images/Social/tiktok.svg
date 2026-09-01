@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="TikTok">
+  <circle cx="24" cy="24" r="23" fill="#0b0b0f"/>
+  <path d="M29 10c.7 4.2 3.1 6.8 7 7.6v5.5a15 15 0 0 1-7-2.2v10.5a10 10 0 1 1-8.5-9.9v5.7a4.5 4.5 0 1 0 3 4.2V10h5.5Z" fill="#25f4ee" transform="translate(-1 1)"/>
+  <path d="M29 10c.7 4.2 3.1 6.8 7 7.6v5.5a15 15 0 0 1-7-2.2v10.5a10 10 0 1 1-8.5-9.9v5.7a4.5 4.5 0 1 0 3 4.2V10h5.5Z" fill="#fe2c55" transform="translate(1 -1)" opacity=".9"/>
+  <path d="M29 10c.7 4.2 3.1 6.8 7 7.6v5.5a15 15 0 0 1-7-2.2v10.5a10 10 0 1 1-8.5-9.9v5.7a4.5 4.5 0 1 0 3 4.2V10h5.5Z" fill="#fff"/>
+</svg>
