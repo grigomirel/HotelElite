@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Meniul Restaurantului Elite din Drobeta-Turnu Severin – preparate alese pentru fiecare moment.">
 
-    <title>Meniu</title>
+    <title>Meniu | Hotel Restaurant Elite</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +17,8 @@
     <link href="css/style-menu.css" rel="stylesheet">
 	<link href="css/style-navigation.css" rel="stylesheet">
 	<link href="css/style-footer.css" rel="stylesheet">
-	<link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon" />
+	<link href="css/style-footer-color.css" rel="stylesheet">
+	<link rel="icon" href="images/EliteFavicon.png" type="image/png">
 
 	<script type="text/javascript" src="js/jquery-11.0.min.js"></script>	
 	<script type="text/javascript" src="js/unitegallery.min.js"></script>	
@@ -38,31 +38,38 @@
 
         <ul>
             <li><a href="index.html">ACASA</a></li>
-            <li><a href="aboutme.html">EVENIMENTE</a></li>
+            <li><a href="about.html">EVENIMENTE</a></li>
             <li><a href="gallery.html">GALERIE</a></li>
             <li><a href="piscina.html">PISCINA</a></li>
+            <li><a href="spa.html">SPA</a></li>
             <li><a href="restaurant.html">RESTAURANT</a></li>
-            <li><a href="menu.html">MENIU</a></li>
+            <li><a href="menu.html" class="active" aria-current="page">MENIU</a></li>
             <li><a href="hotel.html">HOTEL</a></li>
         </ul>
 
-        <a href="contact1.html" class="nav-button">CONTACT</a>
+        <a href="contact.html" class="nav-button">CONTACT</a>
 
     </div>
 </nav>
 	
-<section class="hero_restaurant">
-    <div class="hero-restaurant-content">
-        <h1>Meniu</h1>
-
-<!--        <p>
-            Text sub restaurant
-        </p>-->
-
-<!--        <a href="aboutme.html" class="hero-button">Meniuri</a>-->
-
+<main>
+<section class="menu-hero">
+    <div class="menu-hero-overlay"></div>
+    <div class="menu-hero-content">
+        <p>RESTAURANT ELITE</p>
+        <h1>Gusturi alese</h1>
+        <span>Un meniu creat cu grijă, ingrediente atent alese și preparate potrivite pentru fiecare moment.</span>
     </div>
-   <div class="galerie_restaurant">
+</section>
+
+<section class="menu-content-section">
+    <div class="menu-intro">
+        <p class="section-kicker">MENIUL NOSTRU</p>
+        <h2>Descoperă preparatele Elite</h2>
+        <p>De la rețete apreciate la combinații moderne, fiecare preparat este pregătit pentru a completa atmosfera elegantă a restaurantului nostru.</p>
+        <p>Răsfoiește galeria meniului și contactează-ne pentru informații despre selecțiile disponibile și meniurile pentru evenimente.</p>
+    </div>
+    <div class="galerie_restaurant">
        <div id="gallery">
            <img alt="Imagine 1"
                 src="images/Menu/thumb1.jpg"
@@ -125,16 +132,41 @@
                 data-image="images/Menu/large-image3.avif"
                 data-description="Imagine temporara pentru test">
        </div>
-   </div>
-</section>
-
-<footer>
-    <div class="footer-content">
-        <div><strong>ELITE</strong><p>Hotel, restaurant și momente de neuitat.</p></div>
-        <div><h2>Contact</h2><p>Strada Cicero 219</p><p>Drobeta-Turnu Severin</p></div>
-        <div><h2>Descoperă</h2><a href="aboutme.html">Evenimente</a><a href="piscina.html">Piscină</a><a href="restaurant.html">Restaurant</a><a href="hotel.html">Hotel</a></div>
     </div>
-    <p class="copyright">© Hotel Restaurant Elite</p>
+</section>
+</main>
+
+<footer class="site-footer elite-footer">
+    <div class="elite-footer-grid">
+        <div class="elite-footer-brand">
+            <img class="footer-brand-logo" src="images/Logo/elite-footer-logo.png" alt="Hotel Restaurant Elite">
+            <p>Confort, ospitalitate și experiențe memorabile în Drobeta-Turnu Severin.</p>
+        </div>
+        <div class="elite-footer-column">
+            <h2>Navigare</h2>
+            <div class="elite-footer-links"><a href="index.html">Acasă</a><a href="about.html">Evenimente</a><a href="gallery.html">Galerie</a><a href="piscina.html">Piscină</a><a href="spa.html">Spa</a><a href="restaurant.html">Restaurant</a><a href="menu.html">Meniu</a><a href="hotel.html">Hotel</a></div>
+        </div>
+        <div class="elite-footer-column">
+            <h2>Contact</h2>
+            <a href="https://maps.google.com/?q=Strada+Cicero+219+Drobeta-Turnu+Severin" target="_blank" rel="noopener">Strada Cicero 219<br>Drobeta-Turnu Severin</a>
+            <a href="mailto:contact@hotelelite.ro">contact@hotelelite.ro</a>
+            <a href="contact.html">Formular de contact</a>
+        </div>
+        <div class="elite-footer-column">
+            <h2>Program & rezervări</h2>
+            <p>Piscină: zilnic, 11:00–19:00</p>
+            <p>Pentru restaurant, spa și cazare, contactează echipa noastră.</p>
+            <a class="elite-footer-cta" href="contact.html">REZERVĂ ACUM</a>
+        </div>
+    </div>
+    <div class="elite-footer-bottom">
+        <p>© Hotel Restaurant Elite. Toate drepturile rezervate.</p>
+        <div class="elite-socials" aria-label="Rețele sociale">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/Social/facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/Social/instagram.svg" alt=""></a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="images/Social/tiktok.svg" alt=""></a>
+        </div>
+    </div>
 </footer>
 
     <!-- jQuery -->
@@ -151,7 +183,7 @@
 				theme_panel_position: "bottom",			//top, bottom, left, right - thumbs panel position
 				theme_hide_panel_under_width: 480,		//hide panel under certain browser width, if null, don't hide
                 strippanel_enable_buttons: true,
-                gallery_width: 1350,
+                gallery_width: "100%",
                 gallery_height: 600,
                 gallery_min_width: 150
 			});

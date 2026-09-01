@@ -502,3 +502,37 @@ footer {
         height: 20px;
     }
 }
+
+/* Two-section page layout */
+html, body { width: 100%; height: auto; overflow-x: hidden; overflow-y: auto; }
+body { background: #fff; }
+
+.restaurant-hero {
+    position: relative;
+    min-height: 628px;
+    display: flex;
+    align-items: center;
+    background: url("../images/Restaurant/restaurant_BackgroundImage.jpg") center/cover no-repeat;
+}
+.restaurant-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(17,30,37,.84), rgba(17,30,37,.28)); }
+.restaurant-hero-content { position: absolute; top: 34%; left: 11%; z-index: 1; width: min(1180px, 86%); color: #fff; }
+.restaurant-hero-content > p { margin: 0 0 14px; color: #d6b88c; font-size: 12px; font-weight: bold; letter-spacing: 3px; text-shadow: none; }
+.restaurant-hero h1 { max-width: 760px; margin: 0 0 20px; color: #fff; font-family: Georgia, "Times New Roman", serif; font-size: clamp(52px, 7vw, 86px); font-weight: normal; line-height: 1.05; text-shadow: none; }
+.restaurant-hero-content span { max-width: 620px; display: block; font-size: 18px; line-height: 1.7; }
+
+.restaurant-content-section { padding: 105px 0 120px; background: #fff; }
+.restaurant-intro { width: min(820px, 88%); margin: 0 auto 55px; text-align: center; }
+.section-kicker { margin: 0 0 14px; color: #9b7652; font-size: 12px; font-weight: 800; letter-spacing: 3px; }
+.restaurant-intro h2 { margin: 0 0 24px; color: #26394a; font-family: Georgia, "Times New Roman", serif; font-size: 46px; font-weight: normal; line-height: 1.15; }
+.restaurant-intro > p:not(.section-kicker) { margin: 0 auto 16px; color: #3d4448; font-size: 17px; line-height: 1.65; }
+.restaurant-menu-button { margin-top: 12px; padding: 15px 26px; display: inline-block; color: #fff; background: #1571b0; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-decoration: none; transition: background .25s ease, transform .25s ease; }
+.restaurant-menu-button:hover, .restaurant-menu-button:focus { color: #fff; background: #105b90; text-decoration: none; transform: translateY(-2px); }
+.restaurant-content-section .galerie_restaurant { position: relative; top: auto; bottom: auto; left: auto; width: min(1180px, 92%); margin: 0 auto; transform: none; }
+
+@media (max-width: 768px) {
+    .restaurant-hero { min-height: 538px; }
+    .restaurant-hero-content { top: 30%; left: 7%; width: 86%; }
+    .restaurant-content-section { padding: 75px 0 85px; }
+    .restaurant-intro { margin-bottom: 38px; }
+    .restaurant-intro h2 { font-size: 38px; }
+}

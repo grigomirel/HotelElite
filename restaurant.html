@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Restaurantul Hotelului Elite din Drobeta-Turnu Severin – preparate savuroase și o atmosferă elegantă.">
 
-    <title>Restaurant</title>
+    <title>Restaurant | Hotel Restaurant Elite</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +17,8 @@
     <link href="css/style-restaurant.css" rel="stylesheet">
 	<link href="css/style-navigation.css" rel="stylesheet">
 	<link href="css/style-footer.css" rel="stylesheet">
-	<link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon" />
+	<link href="css/style-footer-color.css" rel="stylesheet">
+	<link rel="icon" href="images/EliteFavicon.png" type="image/png">
 
 	<script type="text/javascript" src="js/jquery-11.0.min.js"></script>	
 	<script type="text/javascript" src="js/unitegallery-1.7.40.min.js"></script>	
@@ -38,31 +38,39 @@
 
         <ul>
             <li><a href="index.html">ACASA</a></li>
-            <li><a href="aboutme.html">EVENIMENTE</a></li>
+            <li><a href="about.html">EVENIMENTE</a></li>
             <li><a href="gallery.html">GALERIE</a></li>
             <li><a href="piscina.html">PISCINA</a></li>
-            <li><a href="restaurant.html">RESTAURANT</a></li>
+            <li><a href="spa.html">SPA</a></li>
+            <li><a href="restaurant.html" class="active" aria-current="page">RESTAURANT</a></li>
             <li><a href="menu.html">MENIU</a></li>
             <li><a href="hotel.html">HOTEL</a></li>
         </ul>
 
-        <a href="contact1.html" class="nav-button">CONTACT</a>
+        <a href="contact.html" class="nav-button">CONTACT</a>
 
     </div>
 </nav>
 	
-<section class="hero_restaurant">
-    <div class="hero-restaurant-content">
-        <h1>Restaurant</h1>
-
-        <p>
-            Restaurant are 100 de locuri ceea ce il face perfect pentru majoratye,anunti, petreceri, blablabla. Punem la dispozitie si meniuri
-        </p>
-
-        <a href="menu.html" class="hero-button">Meniuri</a>
-
+<main>
+<section class="restaurant-hero">
+    <div class="restaurant-hero-overlay"></div>
+    <div class="restaurant-hero-content">
+        <p>HOTEL RESTAURANT ELITE</p>
+        <h1>Gust și rafinament</h1>
+        <span>Descoperă preparate savuroase și o atmosferă elegantă, create pentru mese care devin amintiri.</span>
     </div>
-   <div class="galerie_restaurant">
+</section>
+
+<section class="restaurant-content-section">
+    <div class="restaurant-intro">
+        <p class="section-kicker">RESTAURANT ELITE</p>
+        <h2>O experiență culinară completă</h2>
+        <p>Restaurantul nostru îmbină gustul autentic cu eleganța unui spațiu primitor. Cele 100 de locuri îl fac potrivit atât pentru o cină liniștită, cât și pentru aniversări și evenimente speciale.</p>
+        <p>Explorează atmosfera restaurantului și descoperă selecția pregătită de echipa noastră.</p>
+        <a href="menu.html" class="restaurant-menu-button">DESCOPERĂ MENIUL</a>
+    </div>
+    <div class="galerie_restaurant">
        <div id="gallery">
            <img alt="Imagine 1"
                 src="images/Restaurant/thumb1.jpg"
@@ -95,16 +103,41 @@
                 data-image="images/Restaurant/test-restaurant-dish.png"
                 data-description="Preparat modern pentru restaurant">
        </div>
-   </div>
-</section>
-
-<footer>
-    <div class="footer-content">
-        <div><strong>ELITE</strong><p>Hotel, restaurant și momente de neuitat.</p></div>
-        <div><h2>Contact</h2><p>Strada Cicero 219</p><p>Drobeta-Turnu Severin</p></div>
-        <div><h2>Descoperă</h2><a href="aboutme.html">Evenimente</a><a href="piscina.html">Piscină</a><a href="menu.html">Meniu</a><a href="hotel.html">Hotel</a></div>
     </div>
-    <p class="copyright">© Hotel Restaurant Elite</p>
+</section>
+</main>
+
+<footer class="site-footer elite-footer">
+    <div class="elite-footer-grid">
+        <div class="elite-footer-brand">
+            <img class="footer-brand-logo" src="images/Logo/elite-footer-logo.png" alt="Hotel Restaurant Elite">
+            <p>Confort, ospitalitate și experiențe memorabile în Drobeta-Turnu Severin.</p>
+        </div>
+        <div class="elite-footer-column">
+            <h2>Navigare</h2>
+            <div class="elite-footer-links"><a href="index.html">Acasă</a><a href="about.html">Evenimente</a><a href="gallery.html">Galerie</a><a href="piscina.html">Piscină</a><a href="spa.html">Spa</a><a href="restaurant.html">Restaurant</a><a href="menu.html">Meniu</a><a href="hotel.html">Hotel</a></div>
+        </div>
+        <div class="elite-footer-column">
+            <h2>Contact</h2>
+            <a href="https://maps.google.com/?q=Strada+Cicero+219+Drobeta-Turnu+Severin" target="_blank" rel="noopener">Strada Cicero 219<br>Drobeta-Turnu Severin</a>
+            <a href="mailto:contact@hotelelite.ro">contact@hotelelite.ro</a>
+            <a href="contact.html">Formular de contact</a>
+        </div>
+        <div class="elite-footer-column">
+            <h2>Program & rezervări</h2>
+            <p>Piscină: zilnic, 11:00–19:00</p>
+            <p>Pentru restaurant, spa și cazare, contactează echipa noastră.</p>
+            <a class="elite-footer-cta" href="contact.html">REZERVĂ ACUM</a>
+        </div>
+    </div>
+    <div class="elite-footer-bottom">
+        <p>© Hotel Restaurant Elite. Toate drepturile rezervate.</p>
+        <div class="elite-socials" aria-label="Rețele sociale">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/Social/facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/Social/instagram.svg" alt=""></a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="images/Social/tiktok.svg" alt=""></a>
+        </div>
+    </div>
 </footer>
 
     <!-- jQuery -->

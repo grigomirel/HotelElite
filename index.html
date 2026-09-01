@@ -11,7 +11,7 @@
     <!-- Custom CSS -->
     <link href="css/style-index.css" rel="stylesheet">
     <link href="css/style-navigation.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon" />
+    <link rel="icon" href="images/EliteFavicon.png" type="image/png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,23 +29,30 @@
         <a href="index.html" class="logo">ELITE</a>
 
         <ul>
-            <li><a href="index.html">ACASA</a></li>
-            <li><a href="aboutme.html">EVENIMENTE</a></li>
+            <li><a href="index.html" class="active" aria-current="page">ACASA</a></li>
+            <li><a href="about.html">EVENIMENTE</a></li>
             <li><a href="gallery.html">GALERIE</a></li>
             <li><a href="piscina.html">PISCINA</a></li>
+            <li><a href="spa.html">SPA</a></li>
             <li><a href="restaurant.html">RESTAURANT</a></li>
             <li><a href="menu.html">MENIU</a></li>
             <li><a href="hotel.html">HOTEL</a></li>
         </ul>
 
-        <a href="contact1.html" class="nav-button">CONTACT</a>
+        <a href="contact.html" class="nav-button">CONTACT</a>
 
     </div>
 </nav>
 
 
+<main>
 <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+        <source src="videos/home-hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
     <div class="hero-content">
+        <img class="home-hero-logo" src="images/Logo/elite-footer-logo.png" alt="Elite">
         <h1>Hotel Restaurant Elite</h1>
 
         <p>
@@ -54,9 +61,14 @@
             Oferim confort și eleganță într-o atmosferă plăcută.
         </p>
 
-        <a href="aboutme.html" class="hero-button">CONTACT</a>
     </div>
+</section>
 
+<section class="home-destinations" aria-labelledby="home-destinations-title">
+    <div class="home-destinations-heading">
+        <p>DESCOPERĂ ELITE</p>
+        <h2 id="home-destinations-title">Tot ce ai nevoie pentru momente memorabile</h2>
+    </div>
     <div class="hero-cards">
 
         <a href="hotel.html" class="hero-card">
@@ -69,7 +81,7 @@
             <span>RESTAURANT</span>
         </a>
 
-        <a href="aboutme.html" class="hero-card">
+        <a href="about.html" class="hero-card">
             <img src="images/Restaurant/test-restaurant-table.png" alt="Evenimente la Hotel Elite">
             <span>EVENIMENTE</span>
         </a>
@@ -79,9 +91,14 @@
             <span>PISCINA</span>
         </a>
 
-    </div>
+        <a href="spa.html" class="hero-card">
+            <img src="images/Spa/spa-card.png" alt="SPA Hotel Elite">
+            <span>SPA</span>
+        </a>
 
+    </div>
 </section>
+</main>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

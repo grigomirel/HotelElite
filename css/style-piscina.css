@@ -38,14 +38,14 @@ nav ul a:hover::after, nav ul a.active::after { transform: scaleX(1); }
     margin-top: 10px;
     padding: 15px 25px;
     display: inline-block;
-    color: #172019;
-    background: #cbd6c1;
+    color: #fff;
+    background: #1571b0;
     font-size: 14px;
     font-weight: 800;
     letter-spacing: 1px;
     text-decoration: none;
 }
-.pool-day-button:hover { background: #b9c8ad; color: #172019; }
+.pool-day-button:hover { background: #105b90; color: #fff; }
 
 .activities-section { padding: 95px 0 110px; background: #f3eee4; }
 .activities-section h2 {

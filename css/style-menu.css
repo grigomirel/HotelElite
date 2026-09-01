@@ -490,3 +490,35 @@ footer {
         height: 20px;
     }
 }
+
+/* Two-section page layout */
+html, body { width: 100%; height: auto; overflow-x: hidden; overflow-y: auto; }
+body { background: #fff; }
+
+.menu-hero {
+    position: relative;
+    min-height: 628px;
+    display: flex;
+    align-items: center;
+    background: url("../images/Menu/menu-hero-v2.png") center/cover no-repeat;
+}
+.menu-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24,31,35,.86), rgba(24,31,35,.3)); }
+.menu-hero-content { position: absolute; top: 34%; left: 11%; z-index: 1; width: min(1180px, 86%); color: #fff; }
+.menu-hero-content > p { margin: 0 0 14px; color: #d6b88c; font-size: 12px; font-weight: bold; letter-spacing: 3px; text-shadow: none; }
+.menu-hero h1 { max-width: 760px; margin: 0 0 20px; color: #fff; font-family: Georgia, "Times New Roman", serif; font-size: clamp(52px, 7vw, 86px); font-weight: normal; line-height: 1.05; text-shadow: none; }
+.menu-hero-content span { max-width: 620px; display: block; font-size: 18px; line-height: 1.7; }
+
+.menu-content-section { padding: 105px 0 120px; background: #f8f5f0; }
+.menu-intro { width: min(820px, 88%); margin: 0 auto 55px; text-align: center; }
+.section-kicker { margin: 0 0 14px; color: #9b7652; font-size: 12px; font-weight: 800; letter-spacing: 3px; }
+.menu-intro h2 { margin: 0 0 24px; color: #26394a; font-family: Georgia, "Times New Roman", serif; font-size: 46px; font-weight: normal; line-height: 1.15; }
+.menu-intro > p:not(.section-kicker) { margin: 0 auto 16px; color: #3d4448; font-size: 17px; line-height: 1.65; }
+.menu-content-section .galerie_restaurant { position: relative; top: auto; bottom: auto; left: auto; width: min(1180px, 92%); max-width: 1180px; margin: 0 auto; transform: none; }
+
+@media (max-width: 768px) {
+    .menu-hero { min-height: 538px; }
+    .menu-hero-content { top: 30%; left: 7%; width: 86%; }
+    .menu-content-section { padding: 75px 0 85px; }
+    .menu-intro { margin-bottom: 38px; }
+    .menu-intro h2 { font-size: 38px; }
+}

@@ -8,7 +8,11 @@ nav {
     height: 75px;
     background: rgba(0, 0, 0, .15);
     border-bottom: 1px solid rgba(255, 255, 255, .15);
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+nav,
+nav * { box-sizing: border-box; }
 
 .nav-container {
     width: 90%;
@@ -20,16 +24,41 @@ nav {
 }
 
 .logo {
-    margin-right: 70px;
+    position: relative;
+    margin-right: 48px;
     color: #fff;
     font-size: 42px;
     font-weight: 900;
     letter-spacing: -2px;
     text-decoration: none;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    line-height: 1;
+    transition: color .25s ease, text-shadow .25s ease, transform .25s ease;
 }
 
-.logo:hover, .logo:focus { color: #fff; text-decoration: none; }
+.logo::after {
+    content: "";
+    position: absolute;
+    right: 2px;
+    bottom: -8px;
+    left: 2px;
+    height: 2px;
+    background: #C6A75E;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .25s ease;
+}
+
+.logo:hover,
+.logo:focus {
+    color: #C6A75E;
+    text-decoration: none;
+    text-shadow: 0 4px 14px rgba(198, 167, 94, .3);
+    transform: translateY(-2px);
+}
+
+.logo:hover::after,
+.logo:focus::after { transform: scaleX(1); }
 
 nav ul {
     height: 100%;
@@ -39,7 +68,7 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 25px;
     list-style: none;
 }
 
@@ -57,6 +86,7 @@ nav ul li a {
     text-decoration: none;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, .7);
     transition: color .3s ease;
+    line-height: 1;
 }
 
 nav ul li a::after {
@@ -94,9 +124,14 @@ nav ul li a:focus { color: #f0c52b; text-decoration: none; }
     white-space: nowrap;
     text-decoration: none;
     transition: background-color .3s ease, color .3s ease;
+    line-height: 1;
 }
 
-.nav-button:hover, .nav-button:focus { color: #fff; background: #f0c52b; text-decoration: none; }
+.nav-button:hover, .nav-button:focus {
+    color: #fff !important;
+    background: #1571b0 !important;
+    text-decoration: none;
+}
 
 @media (max-width: 992px) {
     .nav-container { width: 95%; }
@@ -106,11 +141,192 @@ nav ul li a:focus { color: #f0c52b; text-decoration: none; }
 }
 
 @media (max-width: 768px) {
-    nav { position: relative; height: auto; background: #26394a; }
+    nav { position: relative; height: auto; background: #1F2A44; }
     .nav-container { padding: 14px 0; flex-direction: column; }
     .logo { margin: 0 0 10px; }
-    nav ul { height: auto; flex-wrap: wrap; gap: 8px 18px; }
+    nav ul { width: auto; height: auto; margin-bottom: 0; flex-wrap: wrap; gap: 8px 18px; }
     nav ul li, nav ul li a { height: 30px; }
     nav ul li a::after { bottom: 0; }
     .nav-button { margin-top: 12px; }
+}
+
+/* Shared Elite palette */
+:root {
+    --elite-navy: #1F2A44;
+    --elite-beige: #E8DCC8;
+    --elite-gold: #C6A75E;
+    --elite-ivory: #F8F4EC;
+    --elite-charcoal: #252525;
+}
+
+body { color: var(--elite-charcoal); background: var(--elite-ivory); }
+
+nav {
+    background: rgba(31, 42, 68, .38);
+    border-bottom-color: rgba(232, 220, 200, .3);
+}
+
+nav ul li a:hover,
+nav ul li a:focus { color: var(--elite-gold); }
+
+nav ul li a::after { background: var(--elite-gold); }
+
+.nav-button {
+    color: var(--elite-navy);
+    background: var(--elite-gold);
+}
+
+.nav-button:hover,
+.nav-button:focus {
+    color: var(--elite-beige) !important;
+    background: var(--elite-navy) !important;
+}
+
+.hero-overlay,
+.pool-hero-overlay,
+.spa-hero-overlay,
+.events-hero-overlay,
+.gallery-hero-overlay,
+.contact-hero-overlay,
+.restaurant-hero-overlay,
+.menu-hero-overlay {
+    background: linear-gradient(90deg, rgba(31, 42, 68, .88), rgba(31, 42, 68, .3));
+}
+
+.hero-content > p,
+.pool-hero-content > p,
+.spa-hero-content > p,
+.events-hero-content > p,
+.gallery-hero-content > p,
+.contact-hero-title > p,
+.restaurant-hero-content > p,
+.menu-hero-content > p,
+.hero-small-title { color: var(--elite-gold); }
+
+.home-destinations,
+.activities-section,
+.rituals-section,
+.tiles-gallery,
+.contact-section,
+.menu-content-section,
+.events-description,
+.about-rooms-section,
+.rooms-section,
+.quick-links-section { background: var(--elite-beige); }
+
+.pool-showcase,
+.spa-showcase,
+.spa-gallery,
+.pool-photo-grid,
+.events-intro,
+.restaurant-content-section,
+.intro-section,
+.hotel-description,
+.philosophy-section { background: var(--elite-ivory); }
+
+.section-kicker,
+.home-destinations-heading > p { color: #8C6F2F; }
+
+.home-destinations-heading h2,
+.showcase-copy h2,
+.rituals-section h2,
+.spa-gallery-copy h2,
+.restaurant-intro h2,
+.menu-intro h2,
+.intro-title h2,
+.events-description h2,
+.contact-form-column h2,
+.section-heading h2,
+.room-modal-copy h2 { color: var(--elite-navy); }
+
+.hero-card,
+.activity-card,
+.ritual-card,
+.room-card {
+    background: var(--elite-ivory);
+    border: 1px solid rgba(198, 167, 94, .48);
+    box-shadow: 0 10px 28px rgba(31, 42, 68, .12);
+}
+
+.room-card-content { color: var(--elite-charcoal); }
+.room-card-content h3 { color: var(--elite-navy); }
+.room-card-content p { color: var(--elite-charcoal); }
+
+.activity-card h3,
+.ritual-card h3 { color: #8C6F2F; }
+
+.pool-day-button,
+.spa-book-button,
+.restaurant-menu-button,
+.contact-form-column button,
+.booking-button,
+.room-button,
+.room-modal-book {
+    color: var(--elite-navy) !important;
+    background: var(--elite-gold) !important;
+    border-color: var(--elite-gold) !important;
+}
+
+.pool-day-button:hover,
+.pool-day-button:focus,
+.spa-book-button:hover,
+.spa-book-button:focus,
+.restaurant-menu-button:hover,
+.restaurant-menu-button:focus,
+.contact-form-column button:hover,
+.contact-form-column button:focus,
+.booking-button:hover,
+.booking-button:focus,
+.room-button:hover,
+.room-button:focus,
+.room-modal-book:hover,
+.room-modal-book:focus {
+    color: var(--elite-beige) !important;
+    background: var(--elite-navy) !important;
+    border-color: var(--elite-navy) !important;
+}
+
+.contact-form-column input,
+.contact-form-column textarea {
+    background: var(--elite-ivory);
+    border-color: rgba(198, 167, 94, .55);
+}
+
+.contact-form-column input:focus,
+.contact-form-column textarea:focus {
+    border-color: var(--elite-gold);
+    box-shadow: 0 0 0 3px rgba(198, 167, 94, .18);
+}
+
+.calendar-popover,
+.guest-menu button { background: var(--elite-navy); }
+
+.calendar-days button:hover,
+.calendar-days button.selected,
+.guest-menu button:hover,
+.guest-menu button[aria-selected="true"] {
+    color: var(--elite-navy);
+    background: var(--elite-beige);
+}
+
+.room-gallery-thumbs button.active,
+.ug-theme-compact,
+.ug-theme-compact .ug-strip-panel { border-color: var(--elite-gold); }
+
+.ug-theme-compact .ug-button { background-color: var(--elite-gold); }
+.ug-theme-compact .ug-button:hover { background-color: var(--elite-navy); }
+.ug-theme-compact .ug-slider-preloader { border-color: var(--elite-gold); }
+
+.room-amenities li::before,
+.room-modal-kicker,
+.section-heading > p { color: #8C6F2F; }
+
+.room-modal-tags span {
+    color: var(--elite-navy);
+    background: var(--elite-beige);
+    border-color: rgba(198, 167, 94, .55);
+}
+
+@media (max-width: 768px) {
+    nav { background: var(--elite-navy); }
 }

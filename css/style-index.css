@@ -8,6 +8,12 @@
    NAVIGATION
 ========================= */
 
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body { color: #333; background: #fff; font-family: Arial, Helvetica, sans-serif; }
+
 nav {
     position: absolute;
     top: 0;
@@ -171,9 +177,8 @@ nav ul li a:hover {
 
 .hero {
     position: relative;
-/*    height: calc(100vh - 68px); Parametrul asta face hero-ul sa fie mai mic decat toata dimensiunea paginii(in caz ca ai mai multe div-uri)
-    Momentan am doar unul asa ca o sa folosesc heigth si width*/
-    height: 100vh;
+    min-height: 628px;
+    height: 628px;
     width: 100%;
 
     background-image:
@@ -221,22 +226,38 @@ nav ul li a:hover {
 }*/
 
 .hero-content {
-    width: 80%;
-    max-width: 1000px;
-    text-align: center;
-    transform: translateY(-250px); /*text alignment, up-down, default -100px*/
+    position: absolute;
+    top: 24%;
+    left: 11%;
+    z-index: 2;
+    width: min(620px, 78%);
+    text-align: left;
+    transform: none;
+}
+
+.home-hero-logo {
+    width: clamp(105px, 10vw, 150px);
+    height: auto;
+    margin: 0 0 18px;
+    display: block;
+    filter: drop-shadow(0 5px 14px rgba(0, 0, 0, .28));
 }
 
 .hero h1 {
-    font-size: 52px;
+    margin-top: 0;
+    color: #fff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 6vw, 74px);
+    font-weight: normal;
+    line-height: 1.05;
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 18px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 30px;
+    line-height: 1.65;
+    max-width: 600px;
+    margin: 0 0 26px;
 }
 
 .hero-button {
@@ -259,7 +280,7 @@ nav ul li a:hover {
 .hero-cards {
     position: absolute;
 
-    bottom: 400px; /*hero card position ,default 50px*/
+    bottom: 45px;
 
     width: 90%;
     max-width: 1200px;
@@ -349,4 +370,62 @@ nav ul li a:hover {
 
 .hero-card:hover::after {
     background: rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 900px) {
+    .hero { min-height: 820px; height: auto; }
+    .hero-content { top: 16%; left: 7%; width: 86%; }
+    .hero-cards { bottom: 45px; grid-template-columns: repeat(2, 1fr); }
+    .hero-card { height: 175px; }
+}
+
+@media (max-width: 768px) {
+    .hero { min-height: 780px; }
+    .hero-content { top: 9%; }
+    .hero h1 { font-size: 44px; }
+    .hero p { font-size: 16px; }
+    .hero-cards { width: 86%; gap: 14px; }
+    .hero-card { height: 160px; }
+}
+
+@media (max-width: 520px) {
+    .hero { min-height: 990px; }
+    .hero-content { top: 6%; }
+    .hero-cards { grid-template-columns: 1fr; }
+    .hero-card { height: 145px; }
+}
+
+/* Two-section home layout */
+.hero {
+    min-height: 80vh;
+    height: 80vh;
+    overflow: hidden;
+    background: #1d2a32;
+}
+.hero-video { position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: cover; }
+.hero-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(17,30,37,.84), rgba(17,30,37,.3)); }
+.hero-content { top: 34%; }
+.home-destinations { padding: 95px 5% 110px; background: #f8f5f0; }
+.home-destinations-heading { width: min(760px, 90%); margin: 0 auto 48px; text-align: center; }
+.home-destinations-heading > p { margin: 0 0 14px; color: #9b7652; font-size: 12px; font-weight: 800; letter-spacing: 3px; }
+.home-destinations-heading h2 { margin: 0; color: #26394a; font-family: Georgia, "Times New Roman", serif; font-size: 44px; font-weight: normal; line-height: 1.15; }
+.home-destinations .hero-cards { position: static; width: min(1400px, 100%); margin: 0 auto; grid-template-columns: repeat(5, 1fr); }
+
+@media (max-width: 900px) {
+    .hero { min-height: 80vh; height: 80vh; }
+    .hero-content { top: 28%; }
+    .home-destinations .hero-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .hero { min-height: 80vh; height: 80vh; }
+    .hero-content { top: 24%; }
+    .home-destinations { padding: 70px 7% 80px; }
+    .home-destinations-heading h2 { font-size: 37px; }
+}
+
+@media (max-width: 520px) {
+    .hero { min-height: 80vh; height: 80vh; }
+    .hero-content { top: 18%; }
+    .home-destinations .hero-cards { grid-template-columns: 1fr; }
 }

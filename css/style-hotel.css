@@ -238,7 +238,7 @@ nav ul li a:hover::after {
 .rooms-hero {
     position: relative;
 
-    min-height: max(620px, 68vh);
+    min-height: 628px;
 
     width: 100%;
 
@@ -274,9 +274,9 @@ nav ul li a:hover::after {
 .hero-text {
     position: absolute;
 
-    left: 7%;
+    left: 11%;
 
-    top: 18%;
+    top: 28%;
 
     max-width: 650px;
 }
@@ -285,9 +285,9 @@ nav ul li a:hover::after {
 .hero-small-title {
     margin-bottom: 12px;
 
-    color: #d7ad36;
+    color: #d6b88c;
 
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
 
     letter-spacing: 3px;
@@ -299,10 +299,11 @@ nav ul li a:hover::after {
 
     color: white;
 
-    font-size: 58px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(52px, 7vw, 86px);
     font-weight: 400;
 
-    line-height: 1.12;
+    line-height: 1.05;
 
     text-shadow:
         2px 3px 8px
@@ -1176,7 +1177,7 @@ body.modal-open { overflow: hidden; }
     display: grid;
 
     grid-template-columns:
-        repeat(4, 1fr);
+        repeat(5, 1fr);
 
     gap: 45px;
 }
