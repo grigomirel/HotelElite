@@ -4,28 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34a100da-b8e7-4910-a046-a4fe8ce10e76" name="Changes" comment="Sablon_Home_Page">
+    <list default="true" id="34a100da-b8e7-4910-a046-a4fe8ce10e76" name="Changes" comment="Tema site-ului + Reorganizare + HomePage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aboutme.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style-hotel.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-hotel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style-navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style-piscina.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-piscina.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style-restaurant.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-restaurant.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/despre_mine.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/educatie1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/educatie2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobby1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Restaurant/default_RestauranttGaleryImage.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/piscina.html" beforeDir="false" afterPath="$PROJECT_DIR$/piscina.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +23,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -63,23 +49,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.8994180791671356" />
-      <entry key="MS500" value="4.492984394808525" />
-      <entry key="S2" value="14.016578626081966" />
-      <entry key="S5" value="30.364560309564983" />
-      <entry key="S10" value="46.536208065454964" />
-      <entry key="S30" value="66.854351154109" />
-      <entry key="S60" value="77.37333933217795" />
-      <entry key="M2" value="91.2040634221867" />
-      <entry key="M5" value="135.60612784788526" />
-      <entry key="M10" value="231.54863286627494" />
-      <entry key="M15" value="336.96173757053094" />
-      <entry key="M30" value="658.1344461750388" />
-      <entry key="H1" value="1279.3083032328943" />
-      <entry key="H2" value="2489.3970864248545" />
-      <entry key="H4" value="4578.928406491789" />
-      <entry key="D1" value="10865.030646214513" />
-      <entry key="W1" value="13326.692893645048" />
+      <entry key="MS100" value="1.0010394240457845" />
+      <entry key="MS500" value="1.2614561741421229" />
+      <entry key="S2" value="2.1487060114475893" />
+      <entry key="S5" value="3.7516411663589047" />
+      <entry key="S10" value="5.610320079540531" />
+      <entry key="S30" value="8.080921788892901" />
+      <entry key="S60" value="9.008529406847709" />
+      <entry key="M2" value="9.819209389847904" />
+      <entry key="M5" value="11.05935221070453" />
+      <entry key="M10" value="11.848228577098878" />
+      <entry key="M15" value="12.19458944923098" />
+      <entry key="M30" value="16.262036162811427" />
+      <entry key="H1" value="108.65196175901163" />
+      <entry key="H2" value="694.3801080218308" />
+      <entry key="H4" value="2408.7273727701845" />
+      <entry key="D1" value="9766.141367466025" />
+      <entry key="W1" value="13135.734525799702" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -89,35 +75,35 @@
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
       <entry key="S60" value="0.0" />
-      <entry key="M2" value="3.2212883326949987E-163" />
-      <entry key="M5" value="1.0074229490500639E-65" />
-      <entry key="M10" value="3.173993262653891E-33" />
-      <entry key="M15" value="2.1598225969773556E-22" />
-      <entry key="M30" value="1.4780103267978573E-11" />
-      <entry key="H1" value="4.145091552777747E-6" />
-      <entry key="H2" value="0.0027807815342475507" />
-      <entry key="H4" value="0.10087848876021625" />
-      <entry key="D1" value="2.928542750757675" />
-      <entry key="W1" value="5.411346624930811" />
+      <entry key="M2" value="5.624765794049696E-197" />
+      <entry key="M5" value="3.1625818743565243E-79" />
+      <entry key="M10" value="5.623684778435371E-40" />
+      <entry key="M15" value="6.813360889172818E-27" />
+      <entry key="M30" value="8.301357643139234E-14" />
+      <entry key="H1" value="3.1064899676863995E-7" />
+      <entry key="H2" value="7.612631101153357E-4" />
+      <entry key="H4" value="0.0527815967748581" />
+      <entry key="D1" value="2.6288485153660606" />
+      <entry key="W1" value="5.328529231871434" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.8431318150989313" />
-      <entry key="MS500" value="4.467526442776363" />
-      <entry key="S2" value="13.99587457162404" />
-      <entry key="S5" value="30.346241218961513" />
-      <entry key="S10" value="46.521977815898865" />
-      <entry key="S30" value="66.84745463547208" />
-      <entry key="S60" value="77.36933216313281" />
-      <entry key="M2" value="91.20168869015048" />
-      <entry key="M5" value="135.60468461242402" />
-      <entry key="M10" value="231.54736647204746" />
-      <entry key="M15" value="336.9604885213282" />
-      <entry key="M30" value="658.1331814490753" />
-      <entry key="H1" value="1279.3069954164955" />
-      <entry key="H2" value="2489.398495898841" />
-      <entry key="H4" value="4579.027176474545" />
-      <entry key="D1" value="10867.952777562998" />
-      <entry key="W1" value="13332.102536252507" />
+      <entry key="MS100" value="0.9602339362537423" />
+      <entry key="MS500" value="1.2496418567006184" />
+      <entry key="S2" value="2.143527939330936" />
+      <entry key="S5" value="3.7484653797094465" />
+      <entry key="S10" value="5.608154295544903" />
+      <entry key="S30" value="8.079953546869802" />
+      <entry key="S60" value="9.007992125986702" />
+      <entry key="M2" value="9.818891797975663" />
+      <entry key="M5" value="11.05917873250175" />
+      <entry key="M10" value="11.848125339440209" />
+      <entry key="M15" value="12.194515782571075" />
+      <entry key="M30" value="16.261989486751776" />
+      <entry key="H1" value="108.65184319471756" />
+      <entry key="H2" value="694.380483400268" />
+      <entry key="H4" value="2408.779045865033" />
+      <entry key="D1" value="9768.7644598049" />
+      <entry key="W1" value="13141.061376965885" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -190,7 +176,23 @@
       <option name="project" value="LOCAL" />
       <updated>1786558072193</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="almost done">
+      <option name="closed" value="true" />
+      <created>1788280617529</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1788280617529</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Tema site-ului + Reorganizare + HomePage">
+      <option name="closed" value="true" />
+      <created>1788280991832</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1788280991832</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +200,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sablon_Home_Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sablon_Home_Page" />
+    <MESSAGE value="almost done" />
+    <MESSAGE value="Tema site-ului + Reorganizare + HomePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tema site-ului + Reorganizare + HomePage" />
   </component>
 </project>
