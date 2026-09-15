@@ -209,7 +209,7 @@ nav ul li a:focus {
             rgba(0, 0, 0, 0.45),
             rgba(0, 0, 0, 0.45)
         ),
-        url("../images/Restaurant/restaurant_BackgroundImage.jpg");
+        url("../images/Restaurant/RestaurantDiningRoom_5.jpeg");
 
     background-size: cover;
     background-position: center;
@@ -512,7 +512,7 @@ body { background: #fff; }
     min-height: 628px;
     display: flex;
     align-items: center;
-    background: url("../images/Restaurant/restaurant_BackgroundImage.jpg") center/cover no-repeat;
+    background: url("../images/Restaurant/RestaurantDiningRoom_5.jpeg") center/cover no-repeat;
 }
 .restaurant-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(17,30,37,.84), rgba(17,30,37,.28)); }
 .restaurant-hero-content { position: absolute; top: 34%; left: 11%; z-index: 1; width: min(1180px, 86%); color: #fff; }

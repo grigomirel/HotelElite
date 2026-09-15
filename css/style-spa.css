@@ -5,7 +5,7 @@ body { color: #292d2a; background: #fff; font-family: Arial, Helvetica, sans-ser
 .section-kicker { margin-bottom: 14px; color: #9c7652; font-size: 12px; font-weight: 800; letter-spacing: 3px; }
 .section-kicker.centered { text-align: center; }
 
-.spa-hero { position: relative; min-height: 628px; display: flex; align-items: center; background: url('../images/Spa/spa-hero.jpg') center 58%/cover no-repeat; }
+.spa-hero { position: relative; min-height: 628px; display: flex; align-items: center; background: url('../images/Spa/IndoorHeatedPool_3.jpeg') center 58%/cover no-repeat; }
 .spa-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(29,42,38,.86), rgba(29,42,38,.3)); }
 .spa-hero-content { position: absolute; top: 34%; left: 11%; z-index: 1; width: min(1180px, 86%); color: #fff; }
 .spa-hero-content > p { margin-bottom: 14px; color: #dbc19d; font-size: 12px; font-weight: bold; letter-spacing: 3px; }

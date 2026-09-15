@@ -21,11 +21,20 @@ body { color: #333; background: #fff; font-family: Arial, Helvetica, sans-serif;
 .events-gallery-slide { height: 100%; flex: 0 0 50vw; overflow: hidden; opacity: .55; transform: scale(.92); cursor: pointer; transition: opacity .46s ease, transform .46s ease; }
 .events-gallery-slide.active { opacity: 1; transform: scale(1); cursor: default; }
 .events-gallery-slide:focus-visible { outline: 3px solid #937964; outline-offset: 4px; }
-.events-gallery-slide img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.events-gallery-slide img { width: 100%; height: 100%; display: block; object-fit: contain; background: #f8f4ec; }
+.events-gallery-arrow { position: absolute; top: 50%; z-index: 3; width: 52px; height: 52px; display: grid; place-items: center; color: #1F2A44; background: #C6A75E; border: 1px solid #C6A75E; border-radius: 50%; font-size: 38px; line-height: 1; cursor: pointer; transform: translateY(-50%); transition: color .25s ease, background .25s ease; }
+.events-gallery-arrow:hover,
+.events-gallery-arrow:focus { color: #E8DCC8; background: #1F2A44; }
+.events-gallery-prev { left: 3%; }
+.events-gallery-next { right: 3%; }
 
 .events-description { padding: 95px 0; background: #fafafa; }
 .events-description h2 { margin-bottom: 40px; color: #9b7a5e; font-family: Georgia, "Times New Roman", serif; font-size: 39px; font-weight: normal; text-align: center; }
 .two-column-text { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; }
+.events-visit-button { width: fit-content; margin: 38px auto 0; padding: 15px 27px; display: block; color: #1F2A44; background: #C6A75E; border: 1px solid #C6A75E; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: 1.4px; transition: color .25s ease, background .25s ease, border-color .25s ease; }
+.events-visit-button:hover,
+.events-visit-button:focus { color: #E8DCC8; background: #1F2A44; border-color: #1F2A44; }
+.events-visit-button:focus-visible { outline: 3px solid rgba(155,122,94,.35); outline-offset: 4px; }
 
 footer { color: rgba(255,255,255,.8); background: #9B7A5E; }
 .footer-content { padding: 60px 0 45px; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 60px; }
@@ -43,6 +52,7 @@ footer { color: rgba(255,255,255,.8); background: #9B7A5E; }
     .events-intro, .events-description { padding: 65px 0; }
     .events-gallery-track { padding-right: 8%; padding-left: 8%; gap: 12px; }
     .events-gallery-slide { flex-basis: 84%; }
+    .events-gallery-arrow { width: 44px; height: 44px; font-size: 32px; }
 }
 
 @media (max-width: 520px) {

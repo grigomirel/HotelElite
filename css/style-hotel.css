@@ -962,13 +962,13 @@ body.modal-open { overflow: hidden; }
 .room-modal-dialog {
     position: relative;
     z-index: 1;
-    width: min(1120px, 100%);
+    width: min(1500px, 100%);
     max-height: calc(100vh - 48px);
     padding: 60px 28px 32px;
     overflow-y: auto;
     display: grid;
-    grid-template-columns: minmax(0, 1.25fr) minmax(330px, .85fr);
-    gap: 28px;
+    grid-template-columns: minmax(0, 1.65fr) minmax(340px, .75fr);
+    gap: 34px;
     background: #fff;
     border-radius: 18px;
     box-shadow: 0 24px 80px rgba(0, 0, 0, .35);
@@ -992,7 +992,7 @@ body.modal-open { overflow: hidden; }
 
 .room-modal-main-image {
     position: relative;
-    height: 430px;
+    height: min(66vh, 680px);
     overflow: hidden;
     border-radius: 9px;
     background: #eee;
@@ -1003,6 +1003,7 @@ body.modal-open { overflow: hidden; }
     height: 100%;
     display: block;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .room-gallery-arrow {
@@ -1011,16 +1012,33 @@ body.modal-open { overflow: hidden; }
     width: 42px;
     height: 42px;
     padding: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transform: translateY(-50%);
     color: #333;
     background: rgba(255,255,255,.94);
     border: 0;
     border-radius: 50%;
     box-shadow: 0 3px 12px rgba(0,0,0,.2);
-    font-size: 29px;
-    line-height: 38px;
+    font-size: 0;
+    line-height: 1;
     cursor: pointer;
 }
+
+.room-gallery-arrow::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.room-gallery-prev::before { content: '\2039'; transform: translate(-54%, -55%); }
+.room-gallery-next::before { content: '\203A'; transform: translate(-46%, -55%); }
 
 .room-gallery-prev { left: 10px; }
 .room-gallery-next { right: 10px; }
@@ -1119,7 +1137,7 @@ body.modal-open { overflow: hidden; }
 @media (max-width: 850px) {
     .room-modal { padding: 12px; }
     .room-modal-dialog { max-height: calc(100vh - 24px); grid-template-columns: 1fr; padding: 55px 18px 25px; }
-    .room-modal-main-image { height: min(55vw, 390px); }
+    .room-modal-main-image { height: min(62vw, 470px); }
 }
 
 @media (max-width: 500px) {

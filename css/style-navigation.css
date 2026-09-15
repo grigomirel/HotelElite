@@ -317,6 +317,44 @@ nav ul li a::after { background: var(--elite-gold); }
 .ug-theme-compact .ug-button:hover { background-color: var(--elite-navy); }
 .ug-theme-compact .ug-slider-preloader { border-color: var(--elite-gold); }
 
+/* Enlarged gallery view shared by the SPA and Pool pages */
+.spa-gallery-grid img,
+.pool-photo-grid-inner img { cursor: zoom-in; }
+
+body.lightbox-open { overflow: hidden; }
+.elite-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    padding: 34px 90px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(10, 15, 25, .94);
+}
+.elite-lightbox.open { display: flex; }
+.elite-lightbox figure { width: min(1400px, 100%); height: 100%; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.elite-lightbox figure img { max-width: 100%; max-height: calc(100% - 42px); display: block; object-fit: contain; box-shadow: 0 18px 55px rgba(0, 0, 0, .48); }
+.elite-lightbox figcaption { min-height: 42px; padding-top: 14px; color: var(--elite-beige); font-size: 14px; text-align: center; }
+.elite-lightbox-close,
+.elite-lightbox-arrow { position: absolute; z-index: 1; color: var(--elite-navy); background: var(--elite-gold); border: 1px solid var(--elite-gold); cursor: pointer; transition: color .25s ease, background .25s ease; }
+.elite-lightbox-close:hover,
+.elite-lightbox-close:focus,
+.elite-lightbox-arrow:hover,
+.elite-lightbox-arrow:focus { color: var(--elite-beige); background: var(--elite-navy); }
+.elite-lightbox-close { top: 24px; right: 28px; width: 48px; height: 48px; border-radius: 50%; font-size: 34px; line-height: 42px; }
+.elite-lightbox-arrow { top: 50%; width: 52px; height: 52px; border-radius: 50%; font-size: 38px; line-height: 44px; transform: translateY(-50%); }
+.elite-lightbox-prev { left: 24px; }
+.elite-lightbox-next { right: 24px; }
+
+@media (max-width: 680px) {
+    .elite-lightbox { padding: 72px 14px 82px; }
+    .elite-lightbox-close { top: 14px; right: 14px; }
+    .elite-lightbox-arrow { top: auto; bottom: 18px; transform: none; }
+    .elite-lightbox-prev { left: calc(50% - 62px); }
+    .elite-lightbox-next { right: calc(50% - 62px); }
+}
+
 .room-amenities li::before,
 .room-modal-kicker,
 .section-heading > p { color: #8C6F2F; }

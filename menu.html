@@ -20,12 +20,6 @@
 	<link href="css/style-footer-color.css" rel="stylesheet">
 	<link rel="icon" href="images/EliteFavicon.png" type="image/png">
 
-	<script type="text/javascript" src="js/jquery-11.0.min.js"></script>	
-	<script type="text/javascript" src="js/unitegallery.min.js"></script>	
-
-	<link rel="stylesheet" href="css/unite-gallery.css" type="text/css" />
-	
-	<script type="text/javascript" src="js/ug-theme-compact.js"></script>
 </head>
 
 <body>
@@ -62,76 +56,30 @@
     </div>
 </section>
 
-<section class="menu-content-section">
-    <div class="menu-intro">
-        <p class="section-kicker">MENIUL NOSTRU</p>
-        <h2>Descoperă preparatele Elite</h2>
-        <p>De la rețete apreciate la combinații moderne, fiecare preparat este pregătit pentru a completa atmosfera elegantă a restaurantului nostru.</p>
-        <p>Răsfoiește galeria meniului și contactează-ne pentru informații despre selecțiile disponibile și meniurile pentru evenimente.</p>
+<nav class="menu-section-nav" aria-label="Tipuri de meniu">
+    <a href="#meniu-restaurant">Meniu Restaurant</a>
+    <a href="#meniu-evenimente">Meniu Evenimente</a>
+</nav>
+
+<section class="restaurant-menu-section" id="meniu-restaurant">
+    <div class="menu-section-heading">
+        <p class="section-kicker">RESTAURANT ELITE</p>
+        <h2>Meniu Restaurant</h2>
+        <p>Descoperă preparatele disponibile, organizate pe categorii. Prețurile și disponibilitatea se pot modifica.</p>
     </div>
-    <div class="galerie_restaurant">
-       <div id="gallery">
-           <img alt="Imagine 1"
-                src="images/Menu/thumb1.jpg"
-                data-image="images/Menu/large-image1.avif"
-                data-description="descriere">
 
-           <img alt="Imagine 2"
-                src="images/Menu/thumb2.jpg"
-                data-image="images/Menu/large-image2.jpeg"
-                data-description=" descriere">
+<!--    Containerele goale care sunt populate cu hero card-uri based on dictionarul din restaurant-menu-data-->
+    <div class="menu-category-nav" id="menu-category-nav" aria-label="Categorii meniu"></div>
+    <div class="restaurant-menu-categories" id="restaurant-menu-categories"></div>
+</section>
 
-           <img alt="Imagine 3"
-                src="images/Menu/thumb3.jpg"
-                data-image="images/Menu/large-image3.avif"
-                data-description=" descriere">
-
-           <!-- Temporary gallery entries for testing the thumbnail scroll -->
-           <img alt="Imagine test 4"
-                src="images/Menu/thumb1.jpg"
-                data-image="images/Menu/large-image1.avif"
-                data-description="Imagine temporara pentru test">
-
-           <img alt="Imagine test 5"
-                src="images/Menu/thumb2.jpg"
-                data-image="images/Menu/large-image2.jpeg"
-                data-description="Imagine temporara pentru test">
-
-           <img alt="Imagine test 6"
-                src="images/Menu/thumb3.jpg"
-                data-image="images/Menu/large-image3.avif"
-                data-description="Imagine temporara pentru test">
-
-           <img alt="Imagine test 7"
-                src="images/Menu/thumb1.jpg"
-                data-image="images/Menu/large-image1.avif"
-                data-description="Imagine temporara pentru test">
-
-           <img alt="Imagine test 8"
-                src="images/Menu/thumb2.jpg"
-                data-image="images/Menu/large-image2.jpeg"
-                data-description="Imagine temporara pentru test">
-
-           <img alt="Imagine test 9"
-                src="images/Menu/thumb3.jpg"
-                data-image="images/Menu/large-image3.avif"
-                data-description="Imagine temporara pentru test">
-
-           <img alt="Imagine test 10"
-                src="images/Menu/thumb1.jpg"
-                data-image="images/Menu/large-image1.avif"
-                data-description="Imagine temporara pentru test">
-
-           <img alt="Imagine test 11"
-                src="images/Menu/thumb2.jpg"
-                data-image="images/Menu/large-image2.jpeg"
-                data-description="Imagine temporara pentru test">
-
-           <img alt="Imagine test 12"
-                src="images/Menu/thumb3.jpg"
-                data-image="images/Menu/large-image3.avif"
-                data-description="Imagine temporara pentru test">
-       </div>
+<section class="events-menu-section" id="meniu-evenimente">
+    <div class="events-menu-card">
+        <p class="section-kicker">EVENIMENTE ELITE</p>
+        <h2>Meniu pentru Evenimente</h2>
+        <p>Această secțiune este pregătită pentru meniurile dedicate nunților, botezurilor, aniversărilor și evenimentelor corporate.</p>
+        <p>Detaliile și opțiunile de meniu vor fi adăugate în curând.</p>
+        <a href="contact.html">SOLICITĂ INFORMAȚII</a>
     </div>
 </section>
 </main>
@@ -149,48 +97,29 @@
         <div class="elite-footer-column">
             <h2>Contact</h2>
             <a href="https://maps.google.com/?q=Strada+Cicero+219+Drobeta-Turnu+Severin" target="_blank" rel="noopener">Strada Cicero 219<br>Drobeta-Turnu Severin</a>
-            <a href="mailto:contact@hotelelite.ro">contact@hotelelite.ro</a>
+            <a href="mailto:hotelrestaurantelite@yahoo.com">hotelrestaurantelite@yahoo.com</a>
             <a href="contact.html">Formular de contact</a>
         </div>
         <div class="elite-footer-column">
             <h2>Program & rezervări</h2>
-            <p>Piscină: zilnic, 11:00–19:00</p>
-            <p>Pentru restaurant, spa și cazare, contactează echipa noastră.</p>
+            <p>Piscină: zilnic, 10:00–19:00</p>
+            <p>Pentru evenimente, restaurant, spa sau hotel, contactează echipa noastră.</p>
             <a class="elite-footer-cta" href="contact.html">REZERVĂ ACUM</a>
         </div>
     </div>
     <div class="elite-footer-bottom">
         <p>© Hotel Restaurant Elite. Toate drepturile rezervate.</p>
         <div class="elite-socials" aria-label="Rețele sociale">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/Social/facebook.svg" alt=""></a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/Social/instagram.svg" alt=""></a>
-            <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><img src="images/Social/tiktok.svg" alt=""></a>
+            <a href="https://www.facebook.com/MotelRestaurantElite/?locale=ro_RO" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/Social/facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/hotelrestaurantelite/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/Social/instagram.svg" alt=""></a>
+            <a href="https://www.tiktok.com/discover/hotel-restaurant-elite-drobeta-turnu-severin" target="_blank" rel="noopener" aria-label="TikTok"><img src="images/Social/tiktok.svg" alt=""></a>
+            <a href="https://www.booking.com/hotel/ro/motel-restaurant-elite.html?aid=964694&amp;label=room_list-DVuQge%401789469013&amp;sid=4c8ea0a2c36a6c5d559a209e6aee0aeb&amp;checkin=2026-11-18&amp;checkout=2026-11-22&amp;dist=0&amp;from_sn=android&amp;group_adults=2&amp;group_children=0&amp;keep_landing=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;type=total&amp;" target="_blank" rel="noopener" aria-label="Booking.com"><img src="images/Social/booking.svg" alt=""></a>
         </div>
     </div>
 </footer>
 
-    <!-- jQuery -->
-
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-	
-		<script type="text/javascript">
-
-		jQuery(document).ready(function(){
-
-			jQuery("#gallery").unitegallery({
-				theme_panel_position: "bottom",			//top, bottom, left, right - thumbs panel position
-				theme_hide_panel_under_width: 480,		//hide panel under certain browser width, if null, don't hide
-                strippanel_enable_buttons: true,
-                gallery_width: "100%",
-                gallery_height: 600,
-                gallery_min_width: 150
-			});
-
-		});
-		
-	</script>
+    <script src="js/restaurant-menu-data.js"></script>
+    <script src="js/menu-page.js"></script>
 
 </body>
 

@@ -14,7 +14,7 @@ nav ul a:hover::after, nav ul a.active::after { transform: scaleX(1); }
 .nav-button { margin-left: auto; padding: 12px 22px; color: #fff; border: 1px solid rgba(255,255,255,.8); font-size: 12px; font-weight: bold; text-decoration: none; }
 .nav-button:hover { color: #26394a; background: #fff; }
 
-.pool-hero { position: relative; min-height: 628px; display: flex; align-items: center; background: url('../images/gallery.avif') center/cover no-repeat; }
+.pool-hero { position: relative; min-height: 628px; display: flex; align-items: center; background: url('../images/Piscina/PoolExterior_6.jpeg') center/cover no-repeat; }
 .pool-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(17,35,45,.82), rgba(17,35,45,.28)); }
 .pool-hero-content { position: absolute; top: 34%; left: 11%; z-index: 1; width: min(1180px, 86%); margin: 0; color: #fff; }
 .pool-hero-content > p { margin-bottom: 14px; color: #d6b88c; font-size: 12px; font-weight: bold; letter-spacing: 3px; }
