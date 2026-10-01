@@ -14,17 +14,25 @@
 <body>
 <nav>
     <div class="nav-container">
-        <a href="index.html" class="logo">ELITE</a>
+        <a href="acasa.html" class="logo">ELITE</a>
         <ul>
-            <li><a href="index.html">ACASA</a></li>
-            <li><a href="about.html" class="active" aria-current="page">EVENIMENTE</a></li>
-            <li><a href="gallery.html">GALERIE</a></li>
+            <li><a href="acasa.html">ACASA</a></li>
+            <li><a href="evenimente.html" class="active" aria-current="page">EVENIMENTE</a></li>
+            <li><a href="galerie.html">GALERIE</a></li>
             <li><a href="piscina.html">PISCINA</a></li>
             <li><a href="spa.html">SPA</a></li>
             <li><a href="restaurant.html">RESTAURANT</a></li>
-            <li><a href="menu.html">MENIU</a></li>
+            <li><a href="meniu.html">MENIU</a></li>
             <li><a href="hotel.html">HOTEL</a></li>
-        </ul>
+        </ul>        <div class="language-switcher">
+            <button class="language-switcher-toggle" type="button" aria-label="Selectează limba" aria-haspopup="true">
+                <img src="images/Flags/romania.svg" alt=""><span>RO</span><span class="language-switcher-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="language-switcher-menu">
+                <a href="evenimente.html" aria-current="true"><img src="images/Flags/romania.svg" alt="">Română</a>
+                <a href="evenimente-en.html"><img src="images/Flags/united-kingdom.svg" alt="">English</a>
+            </div>
+        </div>
         <a href="contact.html" class="nav-button">CONTACT</a>
     </div>
 </nav>
@@ -64,6 +72,7 @@
             <div class="events-gallery-slide"><img src="images/Evenimente/SalaMare_Interior.jpg" alt="Vedere amplă asupra sălii mari de evenimente"></div>
             <div class="events-gallery-slide"><img src="images/Evenimente/SalaMare_MasaFestiva.jpeg" alt="Masă festivă pregătită în sala mare"></div>
             <div class="events-gallery-slide"><img src="images/Evenimente/CurteEvenimente.jpg" alt="Curtea Hotelului Elite pentru momente în aer liber"></div>
+            <div class="events-gallery-slide"><img src="images/Evenimente/GradinaEvenimente_Panoramic.png" alt="Vedere panoramică a grădinii Hotelului Elite pentru evenimente în aer liber"></div>
 
             <div class="events-gallery-slide"><img src="images/Evenimente/BufetEveniment.jpeg" alt="Bufet variat pregătit pentru evenimente"></div>
             <div class="events-gallery-slide"><img src="images/Evenimente/Preparat_PasteFructeDeMare.jpg" alt="Preparat cu paste și fructe de mare"></div>
@@ -75,11 +84,38 @@
     <section class="events-description">
         <div class="section-container">
             <h2>Evenimentul tău la Hotel Elite</h2>
-            <div class="two-column-text">
-                <p>Hotel Elite pune la dispoziție două săli pentru evenimente: o sală mare, potrivită pentru petreceri cu un număr mai mare de invitați, și o sală mai restrânsă, ideală pentru evenimente intime. Împreună alegem spațiul care se potrivește cel mai bine ocaziei și atmosferei pe care ți-o dorești.</p>
-                <p>Ne dorim să îți oferim cele mai bune servicii și să pregătim fiecare detaliu cu atenție. Programează o vizită la Hotel Elite pentru a vedea sălile, a discuta cu echipa noastră și a stabili împreună alegerea sălii, decorul, meniul și toate detaliile evenimentului.</p>
+            <p class="events-description-lead">Ai la dispoziție trei spații diferite și un meniu personalizabil, astfel încât fiecare detaliu să se potrivească evenimentului tău.</p>
+
+            <div class="events-venue-grid" aria-label="Spații disponibile pentru evenimente">
+                <article class="events-venue-card">
+                    <h3>Sala Mare</h3>
+                    <p>Pentru nunți, botezuri și evenimente cu un număr mare de invitați.</p>
+                </article>
+                <article class="events-venue-card">
+                    <h3>Sala Mică</h3>
+                    <p>Pentru aniversări, petreceri private și evenimente într-un cadru intim.</p>
+                </article>
+                <article class="events-venue-card">
+                    <h3>Grădina Elite</h3>
+                    <p>Pentru evenimente în aer liber, într-un decor verde și relaxant.</p>
+                </article>
             </div>
-            <a href="contact.html" class="events-visit-button">PROGRAMEAZĂ O VIZITĂ</a>
+
+            <div class="events-menu-highlight">
+                <div class="events-menu-highlight-number" aria-hidden="true">M</div>
+                <div>
+                    <p class="events-menu-kicker">MENIU PERSONALIZABIL</p>
+                    <h3>Meniu creat pentru evenimentul tău</h3>
+                    <p>Alegem împreună preparatele și adaptăm meniul în funcție de preferințe, tipul evenimentului și numărul de invitați.</p>
+                </div>
+            </div>
+
+            <div class="events-contact-card">
+                <p>Planifică evenimentul împreună cu noi</p>
+                <a href="tel:+40722631382" aria-label="Sună la 0722 631 382">0722 631 382</a>
+                <span>Pentru alegerea spațiului, configurarea meniului și organizarea tuturor detaliilor.</span>
+            </div>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Motel+Restaurant+Elite%2C+Strada+Cicero+219%2C+Drobeta-Turnu+Severin" class="events-visit-button" target="_blank" rel="noopener">INDICAȚII CĂTRE LOCAȚIE</a>
         </div>
     </section>
 </main>
@@ -92,7 +128,7 @@
         </div>
         <div class="elite-footer-column">
             <h2>Navigare</h2>
-            <div class="elite-footer-links"><a href="index.html">Acasă</a><a href="about.html">Evenimente</a><a href="gallery.html">Galerie</a><a href="piscina.html">Piscină</a><a href="spa.html">Spa</a><a href="restaurant.html">Restaurant</a><a href="menu.html">Meniu</a><a href="hotel.html">Hotel</a></div>
+            <div class="elite-footer-links"><a href="acasa.html">Acasă</a><a href="evenimente.html">Evenimente</a><a href="galerie.html">Galerie</a><a href="piscina.html">Piscină</a><a href="spa.html">Spa</a><a href="restaurant.html">Restaurant</a><a href="meniu.html">Meniu</a><a href="hotel.html">Hotel</a></div>
         </div>
         <div class="elite-footer-column">
             <h2>Contact</h2>
