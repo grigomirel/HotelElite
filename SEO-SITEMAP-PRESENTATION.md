@@ -93,19 +93,20 @@ Then:
 
 Replace every instance of `https://hotelrestaurantelite.ro/` in both files with the new canonical HTTPS origin. Then configure permanent HTTP 301 redirects from every old URL to its matching new URL, retain the old domain long enough for search engines and visitors to follow those redirects, and resubmit the sitemap under the new verified property.
 
-## Recommended next SEO work
+## SEO foundation now implemented
 
-The most useful follow-up work is:
+In addition to the sitemap and robots file, the site now includes:
 
-1. Add a canonical URL to every HTML page.
-2. Add matching reciprocal `hreflang` tags directly inside every page's `<head>`.
-3. Decide what the bare domain `https://hotelrestaurantelite.ro/` serves; ideally it should be the Romanian homepage or permanently redirect to `/acasa.html`.
-4. Add unique title and meta-description content where missing.
-5. Add Hotel, Restaurant, and LocalBusiness structured data with verified business details.
-6. Compress large images and verify Core Web Vitals.
-7. Add privacy/cookie documentation if analytics or non-essential cookies are introduced.
+1. Self-referencing canonical URLs on all 18 HTML pages.
+2. Reciprocal Romanian, English, and `x-default` `hreflang` annotations on every page.
+3. Unique meta descriptions on all pages.
+4. Open Graph and Twitter Card metadata using a dedicated 1200 × 630 sharing image.
+5. `WebSite`, `Hotel`, `Restaurant`, and `DaySpa` JSON-LD on both language homepages.
+6. WebP optimization for large images currently used by the website.
+7. Lazy loading and asynchronous decoding for non-critical inline images.
+
+The remaining deployment actions are to configure the bare domain to redirect permanently to `/acasa.html`, verify the live property in Google Search Console, submit the sitemap, and test representative URLs with PageSpeed Insights and the Rich Results Test. Add privacy and cookie documentation before introducing analytics or non-essential cookies.
 
 ## Maintenance rule
 
 Update the sitemap whenever a public indexable page is added, removed, renamed, translated, or moved to another domain. Do not add images, CSS, JavaScript, admin pages, redirects, errors, or duplicate URLs to this page sitemap.
-

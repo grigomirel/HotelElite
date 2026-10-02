@@ -6,7 +6,7 @@ body { color: #333; background: #fff; font-family: Arial, Helvetica, sans-serif;
     position: relative;
     width: 100%;
     min-height: max(620px, 68vh);
-    background: url('../images/Contact/reception-hero.png') center/cover no-repeat;
+    background: url('../images/Contact/reception-hero.webp') center/cover no-repeat;
 }
 
 .contact-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,25,33,.78), rgba(14,25,33,.38)); }

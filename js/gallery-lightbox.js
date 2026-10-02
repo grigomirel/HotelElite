@@ -23,7 +23,7 @@
 
     function show(index) {
         activeIndex = (index + images.length) % images.length;
-        enlargedImage.src = images[activeIndex].src;
+        enlargedImage.src = images[activeIndex].dataset.full || images[activeIndex].src;
         enlargedImage.alt = images[activeIndex].alt;
         caption.textContent = images[activeIndex].closest('.tiles-grid') ? '' : images[activeIndex].alt;
     }

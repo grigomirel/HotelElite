@@ -6,10 +6,50 @@
   <component name="ChangeListManager">
     <list default="true" id="34a100da-b8e7-4910-a046-a4fe8ce10e76" name="Changes" comment="Tema site-ului + Reorganizare + HomePage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEO-SITEMAP-PRESENTATION.md" beforeDir="false" afterPath="$PROJECT_DIR$/SEO-SITEMAP-PRESENTATION.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acasa-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/acasa-en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acasa.html" beforeDir="false" afterPath="$PROJECT_DIR$/acasa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style-contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style-evenimente.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-evenimente.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style-gallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-gallery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style-hotel.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-hotel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenimente-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/evenimente-en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenimente.html" beforeDir="false" afterPath="$PROJECT_DIR$/evenimente.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/galerie-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/galerie-en.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/galerie.html" beforeDir="false" afterPath="$PROJECT_DIR$/galerie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Camere/promo-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Contact/reception-hero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/EliteFavicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/EliteFavicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Evenimente/CurteEvenimente.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Evenimente/SalaMica_TemaVerde.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Evenimente/SalaMica_TemaVerde_Detaliu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Galerie/gallery-hero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/MeniuPDF/meniu-ro-31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Menu/menu-hero-v2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Piscina/PoolCocktails_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Piscina/PoolExterior_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Piscina/PoolExterior_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Piscina/PoolRelaxation_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Restaurant/RestaurantBar_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Restaurant/restaurant_BackgroundImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Restaurant/test-restaurant-table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hotel-elite-video-poster.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/indexBackgroundImage.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/gallery-lightbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/gallery-lightbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meniu-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/meniu-en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meniu.html" beforeDir="false" afterPath="$PROJECT_DIR$/meniu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/piscina-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/piscina-en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/piscina.html" beforeDir="false" afterPath="$PROJECT_DIR$/piscina.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spa-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/spa-en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spa.html" beforeDir="false" afterPath="$PROJECT_DIR$/spa.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,23 +93,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.4782457272932796" />
-      <entry key="MS500" value="4.266063666521353" />
-      <entry key="S2" value="10.620462041738431" />
-      <entry key="S5" value="15.275468609412709" />
-      <entry key="S10" value="17.75417019259575" />
-      <entry key="S30" value="19.81644353106498" />
-      <entry key="S60" value="20.394322093158813" />
-      <entry key="M2" value="20.699245596068746" />
-      <entry key="M5" value="26.556725941658293" />
-      <entry key="M10" value="96.1011813589981" />
-      <entry key="M15" value="219.13341085265805" />
-      <entry key="M30" value="646.3068471697412" />
-      <entry key="H1" value="1433.1046832203538" />
-      <entry key="H2" value="2847.463021599707" />
-      <entry key="H4" value="5279.41794101855" />
-      <entry key="D1" value="16853.382934324083" />
-      <entry key="W1" value="24233.003012185145" />
+      <entry key="MS100" value="1.0421132288906958" />
+      <entry key="MS500" value="3.0089986924859393" />
+      <entry key="S2" value="9.259450280177639" />
+      <entry key="S5" value="16.392154163943736" />
+      <entry key="S10" value="21.341149710225462" />
+      <entry key="S30" value="27.76705927591309" />
+      <entry key="S60" value="40.457643021921136" />
+      <entry key="M2" value="69.59849533155891" />
+      <entry key="M5" value="127.07649321032966" />
+      <entry key="M10" value="201.0895554891289" />
+      <entry key="M15" value="304.64215866867994" />
+      <entry key="M30" value="694.6706635818309" />
+      <entry key="H1" value="1466.7993273770228" />
+      <entry key="H2" value="2882.2115882084395" />
+      <entry key="H4" value="5326.190817303049" />
+      <entry key="D1" value="16972.679563514535" />
+      <entry key="W1" value="24418.0047877791" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -79,35 +119,35 @@
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
       <entry key="S60" value="0.0" />
-      <entry key="M2" value="5.5200689E-316" />
-      <entry key="M5" value="7.884566212539493E-127" />
-      <entry key="M10" value="8.879509637542342E-64" />
-      <entry key="M15" value="9.238612157711023E-43" />
-      <entry key="M30" value="9.666556549812704E-22" />
-      <entry key="H1" value="3.3522105689323846E-11" />
-      <entry key="H2" value="7.907978005092314E-6" />
-      <entry key="H4" value="0.00537957365984628" />
-      <entry key="D1" value="1.7967036498915334" />
-      <entry key="W1" value="5.0465504878478376" />
+      <entry key="M2" value="1.626681E-317" />
+      <entry key="M5" value="1.925399806807856E-127" />
+      <entry key="M10" value="4.387938606872087E-64" />
+      <entry key="M15" value="5.774589391177583E-43" />
+      <entry key="M30" value="7.6423862343569E-22" />
+      <entry key="H1" value="2.980642463291705E-11" />
+      <entry key="H2" value="7.456838707715805E-6" />
+      <entry key="H4" value="0.005223871757806604" />
+      <entry key="D1" value="1.7879301916536707" />
+      <entry key="W1" value="5.043022706843729" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.4236698479070362" />
-      <entry key="MS500" value="4.231459395149365" />
-      <entry key="S2" value="10.597872850538852" />
-      <entry key="S5" value="15.261825347589205" />
-      <entry key="S10" value="17.74606002484713" />
-      <entry key="S30" value="19.813374926968812" />
-      <entry key="S60" value="20.39273607790739" />
-      <entry key="M2" value="20.698438976413446" />
-      <entry key="M5" value="26.55632276022447" />
-      <entry key="M10" value="96.10040856519937" />
-      <entry key="M15" value="219.13211405321587" />
-      <entry key="M30" value="646.3047558999757" />
-      <entry key="H1" value="1433.1024196584076" />
-      <entry key="H2" value="2847.460957400158" />
-      <entry key="H4" value="5279.421506511324" />
-      <entry key="D1" value="16855.175171289473" />
-      <entry key="W1" value="24238.04788634119" />
+      <entry key="MS100" value="1.0133118817607176" />
+      <entry key="MS500" value="2.9888586766814007" />
+      <entry key="S2" value="9.242980896515425" />
+      <entry key="S5" value="16.38019438129117" />
+      <entry key="S10" value="21.333281209631554" />
+      <entry key="S30" value="27.763621314244393" />
+      <entry key="S60" value="40.45511217544743" />
+      <entry key="M2" value="69.59626041145876" />
+      <entry key="M5" value="127.07480513693008" />
+      <entry key="M10" value="201.08815014836304" />
+      <entry key="M15" value="304.6406005364236" />
+      <entry key="M30" value="694.6685991986349" />
+      <entry key="H1" value="1466.7970989131788" />
+      <entry key="H2" value="2882.2095311619614" />
+      <entry key="H4" value="5326.194223601839" />
+      <entry key="D1" value="16974.463039402086" />
+      <entry key="W1" value="24423.046133976273" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">

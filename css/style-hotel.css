@@ -685,7 +685,7 @@ nav ul li a:hover::after {
             rgba(0, 0, 0, 0.52)
         ),
 
-        url("../images/Camere/promo-background.jpg");
+        url("../images/Camere/promo-background.webp");
 
 
     background-size: cover;

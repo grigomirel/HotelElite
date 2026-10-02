@@ -212,7 +212,7 @@ nav ul li a:focus {
             rgba(0, 0, 0, 0.45),
             rgba(0, 0, 0, 0.45)
         ),
-        url("../images/Restaurant/restaurant_BackgroundImage.jpg");
+        url("../images/Restaurant/restaurant_BackgroundImage.webp");
 
     background-size: cover;
     background-position: center;
@@ -500,7 +500,7 @@ body { background: #fff; }
     min-height: 628px;
     display: flex;
     align-items: center;
-    background: url("../images/Menu/menu-hero-v2.png") center/cover no-repeat;
+    background: url("../images/Menu/menu-hero-v2.webp") center/cover no-repeat;
 }
 .menu-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24,31,35,.86), rgba(24,31,35,.3)); }
 .menu-hero-content { position: absolute; top: 34%; left: 11%; z-index: 1; width: min(1180px, 86%); color: #fff; }
