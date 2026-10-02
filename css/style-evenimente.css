@@ -4,7 +4,7 @@ body { color: #333; background: #fff; font-family: Arial, Helvetica, sans-serif;
 
 .events-hero { position: relative; min-height: 628px; background: url('../images/Restaurant/test-restaurant-table.webp') center 58%/cover no-repeat; }
 .events-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(16,28,36,.82), rgba(16,28,36,.3)); }
-.events-hero-content { position: absolute; top: 34%; left: 11%; z-index: 1; width: min(900px, 80%); color: #fff; }
+.events-hero-content { position: absolute; top: 50%; left: 11%; z-index: 1; width: min(900px, 80%); color: #fff; transform: translateY(-50%); }
 .events-hero-content > p { margin-bottom: 14px; color: #d6b88c; font-size: 12px; font-weight: bold; letter-spacing: 3px; }
 .events-hero h1 { max-width: 850px; margin-bottom: 20px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(52px, 7vw, 84px); font-weight: normal; line-height: 1.05; }
 .events-hero-content span { max-width: 590px; display: block; font-size: 18px; line-height: 1.7; }
@@ -61,7 +61,9 @@ footer { color: rgba(255,255,255,.8); background: #9B7A5E; }
 
 @media (max-width: 768px) {
     .events-hero { min-height: 538px; }
-    .events-hero-content { top: 30%; left: 7%; width: 86%; }
+    .events-hero-content { top: 50%; left: 7%; width: 86%; }
+    .events-hero h1 { margin-bottom: 16px; font-size: clamp(38px, 10vw, 52px); line-height: 1.08; }
+    .events-hero-content span { font-size: 16px; line-height: 1.55; }
     .intro-grid, .intro-text, .two-column-text, .footer-content { grid-template-columns: 1fr; }
     .intro-grid { gap: 35px; }
     .events-intro, .events-description { padding: 65px 0; }
