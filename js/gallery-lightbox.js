@@ -1,5 +1,5 @@
 (function () {
-    const selectors = ['.spa-gallery-grid img', '.pool-photo-grid-inner img'];
+    const selectors = ['.spa-gallery-grid img', '.pool-photo-grid-inner img', '.tiles-grid img'];
     const images = Array.from(document.querySelectorAll(selectors.join(',')));
     if (!images.length) return;
 
@@ -25,7 +25,7 @@
         activeIndex = (index + images.length) % images.length;
         enlargedImage.src = images[activeIndex].src;
         enlargedImage.alt = images[activeIndex].alt;
-        caption.textContent = images[activeIndex].alt;
+        caption.textContent = images[activeIndex].closest('.tiles-grid') ? '' : images[activeIndex].alt;
     }
 
     function open(index) {
@@ -45,10 +45,11 @@
     }
 
     images.forEach((image, index) => {
+        const trigger = image.closest('.tile') || image;
         image.tabIndex = 0;
         image.setAttribute('role', 'button');
         image.setAttribute('aria-label', `Mărește: ${image.alt}`);
-        image.addEventListener('click', () => open(index));
+        trigger.addEventListener('click', () => open(index));
         image.addEventListener('keydown', event => {
             if (event.key === 'Enter' || event.key === ' ') {
                 event.preventDefault();
