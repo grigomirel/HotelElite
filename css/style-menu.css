@@ -751,8 +751,19 @@ body { background: #fff; }
     .menu-category-nav::before { left: 12px; }
     .menu-category-nav::after { right: 12px; }
     .menu-category-nav > p::before, .menu-category-nav > p::after { width: 34px; }
-    .menu-category-links { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 8px; }
-    .menu-category-links a { flex: 0 0 auto; }
+    .menu-category-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+    .menu-category-links a {
+        width: 100%;
+        min-width: 0;
+        justify-content: center;
+        padding: 9px 7px;
+        text-align: center;
+        line-height: 1.25;
+    }
     .menu-category { margin-bottom: 58px; }
     .menu-category > h3 { font-size: 25px; }
     .menu-item-card { grid-template-columns: 105px minmax(0, 1fr); min-height: 130px; }
